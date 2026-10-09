@@ -80,7 +80,7 @@ The same reconstructed checkpoint reproduced the issue-scale baseline:
 ## Gate evidence and remaining verification
 
 The latest base and extra workflows still stop before build/test. For example,
-[base gate job 113226151315](https://github.com/sgl-project/sglang/actions/runs/37751674102/job/113226151315)
+[latest base gate job 113663936023](https://github.com/sgl-project/sglang/actions/runs/37882097010/job/113663936023)
 records:
 
 ```text
