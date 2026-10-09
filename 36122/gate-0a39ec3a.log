@@ -1,0 +1,13 @@
+PR: https://github.com/sgl-project/sglang/pull/36122
+HEAD: 0a39ec3a8754e3c4426950a5a93046c048a03f07
+Workflow job: https://github.com/sgl-project/sglang/actions/runs/37882097010/job/113663936023
+
+2026-10-09 gate excerpt
+PR Draft: false
+Require run-ci: true
+Require run-ci-extra: false
+Missing required label 'run-ci'. See https://docs.sglang.io/developer_guide/contribution_guide.html#how-to-trigger-ci-tests for more details.
+Process completed with exit code 1.
+
+Interpretation: the gate stopped before build/test jobs. Downstream wheel,
+AOT, Arm64, H100, and B200 jobs were skipped.
