@@ -34,6 +34,8 @@ dispatch.
 
 The production route log contains these kernel events:
 
+[captured route log](https://github.com/liuhao-labs/sglang/blob/pr-assets-36122/36122/route-log-local.txt)
+
 ```text
 dense M=16  -> sgl_kernel::ggml_mul_mat_a8
 dense M=17  -> sgl_kernel::ggml_dequantize
@@ -91,6 +93,8 @@ supporting evidence for the conservative gates, not cross-architecture claims.
 The latest base and extra workflows still stop before build/test. For example,
 [latest base gate job 113663936023](https://github.com/sgl-project/sglang/actions/runs/37882097010/job/113663936023)
 records:
+
+[captured gate log](https://github.com/liuhao-labs/sglang/blob/pr-assets-36122/36122/gate-0a39ec3a.log)
 
 ```text
 PR Draft: false
