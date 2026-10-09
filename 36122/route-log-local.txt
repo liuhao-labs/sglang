@@ -1,0 +1,21 @@
+PR #36122 local installed-wheel production smoke
+Environment: NVIDIA GB10 sm_121, CUDA 13, aarch64
+Wheel: PR-built sglang-kernel 0.4.6.post1, SHA-256 626d6ee79dd37dae2242f2f18a97b0536c95dfa4c053cb56d7573de23324c6e0
+Source-equivalent validated head: 4c3e4c2350f4d6c4ff2a785e9b294938766a3cc6
+
+capability=True
+dense M=16  -> sgl_kernel::ggml_mul_mat_a8
+dense M=17  -> sgl_kernel::ggml_dequantize
+MoE M=127   -> sgl_kernel::ggml_moe_a8_vec
+MoE M=128   -> sgl_kernel::ggml_moe_a8
+MoE M=2050  -> sgl_kernel::ggml_moe_a8
+CUDA Graph capture/replay -> exact output match
+maximum reserved GPU memory -> 528 MiB
+
+Old-wheel compatibility pairing:
+capability=False
+IQ dense route -> dequantize fallback
+MoE route -> vector fallback
+small IQ3_S health/generate -> HTTP 200 / HTTP 200
+cached prompt tokens -> 0
+client JSON SHA-256 -> bd3c11d390f7a373e534f5361807119b2c040bc325cfe1f6fd2c8165d4426933
