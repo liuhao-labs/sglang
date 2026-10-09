@@ -77,6 +77,15 @@ not a bit-identical copy of the deleted original checkpoint.
 The same reconstructed checkpoint reproduced the issue-scale baseline:
 57.69 tok/s versus the issue's 56.3 tok/s (+2.5%).
 
+The checked-in benchmark visualizations are available as immutable PNG assets:
+
+- [dense crossover heatmap](https://raw.githubusercontent.com/liuhao-labs/sglang/pr-assets-36122/36122/dense-crossover-heatmap.png)
+- [dense M=16 latency comparison](https://raw.githubusercontent.com/liuhao-labs/sglang/pr-assets-36122/36122/dense-m16-benchmark.png)
+- [batched MoE speedup](https://raw.githubusercontent.com/liuhao-labs/sglang/pr-assets-36122/36122/moe-speedup.png)
+
+The plots are directional GB10 measurements with a live service; they are
+supporting evidence for the conservative gates, not cross-architecture claims.
+
 ## Gate evidence and remaining verification
 
 The latest base and extra workflows still stop before build/test. For example,
