@@ -10,6 +10,11 @@ the repository-owned CI gate is enabled.
 - three-way merge: clean
 - feature diff against that base: 15 files, `+4127/-81`
 - `git diff --check`: passed
+- final-head Python syntax checks for the SRT selector and registered routing
+  test: passed
+- final-head symbol/selector audit: capability handshake, eight-format set,
+  MoE M=128 gate, alignment guards, and fail-fast unsupported-type paths are
+  present
 - the 67 main commits since the previous sync have no path overlap with the
   15 feature files; the 4 earlier overlapping paths only contained AOT cleanup
   and formatting, not GGUF MMQ logic.
