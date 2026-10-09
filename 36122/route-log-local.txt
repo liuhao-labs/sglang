@@ -1,4 +1,6 @@
 PR #36122 local installed-wheel production smoke
+This is a normalized route-event excerpt from the local profiler report; the
+external full-model route logs are linked from the PR evidence comment.
 Environment: NVIDIA GB10 sm_121, CUDA 13, aarch64
 Wheel: PR-built sglang-kernel 0.4.6.post1, SHA-256 626d6ee79dd37dae2242f2f18a97b0536c95dfa4c053cb56d7573de23324c6e0
 Source-equivalent validated head: 4c3e4c2350f4d6c4ff2a785e9b294938766a3cc6
