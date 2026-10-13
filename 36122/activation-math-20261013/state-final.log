@@ -1,0 +1,17 @@
+2026-10-13T17:05:23+08:00
+spark-2271
+## fix/issue-35019-iq-mmq...fork/fix/issue-35019-iq-mmq
+0a39ec3a8754e3c4426950a5a93046c048a03f07
+7ff3a112846a3fcc12a27bba09d644885a226e4d
+15d569117ce2d059ed2a3203ed53701063ace606 7ff3a112846a3fcc12a27bba09d644885a226e4d 0a39ec3a8754e3c4426950a5a93046c048a03f07 36909c6658f0ce1ed346db5b85a3568325b9357d
+ 15 files changed, 4127 insertions(+), 81 deletions(-)
+sha256:c5d229150e9f0815f0d66ba64918c9383afccfdc7a548d318a1fb6d38fd2f06c ["quay.io/gpustack/runner@sha256:28aabc1a96ec840d35a56b862bcacbcd198edddde3850a2862f70eb99cbc0e56"]
+NVIDIA GB10, 12.1, 96 %, 0 %
+2937011, /usr/libexec/gnome-remote-desktop-daemon, 176 MiB
+3168838, VLLM::EngineCore, 77839 MiB
+               total        used        free      shared  buff/cache   available
+Mem:           121Gi        94Gi        11Gi       177Mi        18Gi        27Gi
+Swap:           15Gi       2.3Gi        13Gi
+qwen35-9b-official Up 5 days
+cloudflared Up 3 weeks
+existing_vllm_health_http=200

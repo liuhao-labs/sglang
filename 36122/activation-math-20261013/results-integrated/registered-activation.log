@@ -1,0 +1,76 @@
+/usr/local/lib/python3.12/dist-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-9.1.1, pluggy-1.6.0 -- /usr/bin/python3
+rootdir: /src/test
+configfile: pytest.ini
+plugins: anyio-4.14.2, typeguard-4.5.2
+collecting ... collected 110 items / 56 deselected / 54 selected
+
+src/test/registered/kernels/ops/activation/test_activation.py::test_activation_correctness[shape0-dtype0-silu] PASSED [  1%]
+src/test/registered/kernels/ops/activation/test_activation.py::test_activation_correctness[shape0-dtype0-gelu] PASSED [  3%]
+src/test/registered/kernels/ops/activation/test_activation.py::test_activation_correctness[shape0-dtype0-gelu_tanh] PASSED [  5%]
+src/test/registered/kernels/ops/activation/test_activation.py::test_activation_correctness[shape0-dtype1-silu] PASSED [  7%]
+src/test/registered/kernels/ops/activation/test_activation.py::test_activation_correctness[shape0-dtype1-gelu] PASSED [  9%]
+src/test/registered/kernels/ops/activation/test_activation.py::test_activation_correctness[shape0-dtype1-gelu_tanh] PASSED [ 11%]
+src/test/registered/kernels/ops/activation/test_activation.py::test_activation_correctness[shape0-dtype2-silu] PASSED [ 12%]
+src/test/registered/kernels/ops/activation/test_activation.py::test_activation_correctness[shape0-dtype2-gelu] PASSED [ 14%]
+src/test/registered/kernels/ops/activation/test_activation.py::test_activation_correctness[shape0-dtype2-gelu_tanh] PASSED [ 16%]
+src/test/registered/kernels/ops/activation/test_activation.py::test_activation_correctness[shape1-dtype0-silu] PASSED [ 18%]
+src/test/registered/kernels/ops/activation/test_activation.py::test_activation_correctness[shape1-dtype0-gelu] PASSED [ 20%]
+src/test/registered/kernels/ops/activation/test_activation.py::test_activation_correctness[shape1-dtype0-gelu_tanh] PASSED [ 22%]
+src/test/registered/kernels/ops/activation/test_activation.py::test_activation_correctness[shape1-dtype1-silu] PASSED [ 24%]
+src/test/registered/kernels/ops/activation/test_activation.py::test_activation_correctness[shape1-dtype1-gelu] PASSED [ 25%]
+src/test/registered/kernels/ops/activation/test_activation.py::test_activation_correctness[shape1-dtype1-gelu_tanh] PASSED [ 27%]
+src/test/registered/kernels/ops/activation/test_activation.py::test_activation_correctness[shape1-dtype2-silu] PASSED [ 29%]
+src/test/registered/kernels/ops/activation/test_activation.py::test_activation_correctness[shape1-dtype2-gelu] PASSED [ 31%]
+src/test/registered/kernels/ops/activation/test_activation.py::test_activation_correctness[shape1-dtype2-gelu_tanh] PASSED [ 33%]
+src/test/registered/kernels/ops/activation/test_activation.py::test_activation_correctness[shape2-dtype0-silu] PASSED [ 35%]
+src/test/registered/kernels/ops/activation/test_activation.py::test_activation_correctness[shape2-dtype0-gelu] PASSED [ 37%]
+src/test/registered/kernels/ops/activation/test_activation.py::test_activation_correctness[shape2-dtype0-gelu_tanh] PASSED [ 38%]
+src/test/registered/kernels/ops/activation/test_activation.py::test_activation_correctness[shape2-dtype1-silu] PASSED [ 40%]
+src/test/registered/kernels/ops/activation/test_activation.py::test_activation_correctness[shape2-dtype1-gelu] PASSED [ 42%]
+src/test/registered/kernels/ops/activation/test_activation.py::test_activation_correctness[shape2-dtype1-gelu_tanh] PASSED [ 44%]
+src/test/registered/kernels/ops/activation/test_activation.py::test_activation_correctness[shape2-dtype2-silu] PASSED [ 46%]
+src/test/registered/kernels/ops/activation/test_activation.py::test_activation_correctness[shape2-dtype2-gelu] PASSED [ 48%]
+src/test/registered/kernels/ops/activation/test_activation.py::test_activation_correctness[shape2-dtype2-gelu_tanh] PASSED [ 50%]
+src/test/registered/kernels/ops/activation/test_activation.py::test_activation_out_param[shape0-dtype0-silu] PASSED [ 51%]
+src/test/registered/kernels/ops/activation/test_activation.py::test_activation_out_param[shape0-dtype0-gelu] PASSED [ 53%]
+src/test/registered/kernels/ops/activation/test_activation.py::test_activation_out_param[shape0-dtype0-gelu_tanh] PASSED [ 55%]
+src/test/registered/kernels/ops/activation/test_activation.py::test_activation_out_param[shape0-dtype1-silu] PASSED [ 57%]
+src/test/registered/kernels/ops/activation/test_activation.py::test_activation_out_param[shape0-dtype1-gelu] PASSED [ 59%]
+src/test/registered/kernels/ops/activation/test_activation.py::test_activation_out_param[shape0-dtype1-gelu_tanh] PASSED [ 61%]
+src/test/registered/kernels/ops/activation/test_activation.py::test_activation_out_param[shape0-dtype2-silu] PASSED [ 62%]
+src/test/registered/kernels/ops/activation/test_activation.py::test_activation_out_param[shape0-dtype2-gelu] PASSED [ 64%]
+src/test/registered/kernels/ops/activation/test_activation.py::test_activation_out_param[shape0-dtype2-gelu_tanh] PASSED [ 66%]
+src/test/registered/kernels/ops/activation/test_activation.py::test_activation_out_param[shape1-dtype0-silu] PASSED [ 68%]
+src/test/registered/kernels/ops/activation/test_activation.py::test_activation_out_param[shape1-dtype0-gelu] PASSED [ 70%]
+src/test/registered/kernels/ops/activation/test_activation.py::test_activation_out_param[shape1-dtype0-gelu_tanh] PASSED [ 72%]
+src/test/registered/kernels/ops/activation/test_activation.py::test_activation_out_param[shape1-dtype1-silu] PASSED [ 74%]
+src/test/registered/kernels/ops/activation/test_activation.py::test_activation_out_param[shape1-dtype1-gelu] PASSED [ 75%]
+src/test/registered/kernels/ops/activation/test_activation.py::test_activation_out_param[shape1-dtype1-gelu_tanh] PASSED [ 77%]
+src/test/registered/kernels/ops/activation/test_activation.py::test_activation_out_param[shape1-dtype2-silu] PASSED [ 79%]
+src/test/registered/kernels/ops/activation/test_activation.py::test_activation_out_param[shape1-dtype2-gelu] PASSED [ 81%]
+src/test/registered/kernels/ops/activation/test_activation.py::test_activation_out_param[shape1-dtype2-gelu_tanh] PASSED [ 83%]
+src/test/registered/kernels/ops/activation/test_activation.py::test_activation_out_param[shape2-dtype0-silu] PASSED [ 85%]
+src/test/registered/kernels/ops/activation/test_activation.py::test_activation_out_param[shape2-dtype0-gelu] PASSED [ 87%]
+src/test/registered/kernels/ops/activation/test_activation.py::test_activation_out_param[shape2-dtype0-gelu_tanh] PASSED [ 88%]
+src/test/registered/kernels/ops/activation/test_activation.py::test_activation_out_param[shape2-dtype1-silu] PASSED [ 90%]
+src/test/registered/kernels/ops/activation/test_activation.py::test_activation_out_param[shape2-dtype1-gelu] PASSED [ 92%]
+src/test/registered/kernels/ops/activation/test_activation.py::test_activation_out_param[shape2-dtype1-gelu_tanh] PASSED [ 94%]
+src/test/registered/kernels/ops/activation/test_activation.py::test_activation_out_param[shape2-dtype2-silu] PASSED [ 96%]
+src/test/registered/kernels/ops/activation/test_activation.py::test_activation_out_param[shape2-dtype2-gelu] PASSED [ 98%]
+src/test/registered/kernels/ops/activation/test_activation.py::test_activation_out_param[shape2-dtype2-gelu_tanh] PASSED [100%]
+
+=============================== warnings summary ===============================
+usr/local/lib/python3.12/dist-packages/_pytest/config/__init__.py:1464
+  /usr/local/lib/python3.12/dist-packages/_pytest/config/__init__.py:1464: PytestConfigWarning: Unknown config option: asyncio_mode
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+usr/local/lib/python3.12/dist-packages/torchao/quantization/quant_api.py:1731
+  /usr/local/lib/python3.12/dist-packages/torchao/quantization/quant_api.py:1731: SyntaxWarning: invalid escape sequence '\.'
+    """Configuration class for applying different quantization configs to modules or parameters based on their fully qualified names (FQNs).
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================ 54 passed, 56 deselected, 2 warnings in 12.11s ================

@@ -1,0 +1,39 @@
+{
+  "torch": "2.11.0+cu130",
+  "cuda": "13.0",
+  "python": "Python 3.12.3",
+  "nvcc": "nvcc: NVIDIA (R) Cuda compiler driver\nCopyright (c) 2005-2025 NVIDIA Corporation\nBuilt on Wed_Aug_20_01:57:39_PM_PDT_2025\nCuda compilation tools, release 13.0, V13.0.88\nBuild cuda_13.0.r13.0/compiler.36424714_0",
+  "packages": {
+    "apache-tvm-ffi": "0.1.11",
+    "sglang-kernel": "0.4.4",
+    "gguf": "0.19.0",
+    "pytest": "9.1.1",
+    "transformers": "5.12.1"
+  },
+  "wheel": {
+    "file": "sglang_kernel-0.4.4-cp310-abi3-manylinux2014_aarch64.whl",
+    "sha256": "727e4bc53abeade20260186f99199200320b9fa51f8de7af90c01524cff73e5d",
+    "installed_common_ops_matches_wheel": true,
+    "sm100_common_ops_sha256": "672a1cb425d2d2815b8138c34fd8a1e89603bac9a8986dc9db7883e04be535d3"
+  },
+  "sources": {
+    "main": {
+      "python/sglang/kernels/jit/utils/arch.py": "dc9789c480cbbcde565be8d93af765aaf3ae318789964b99e590ddf9409a8dab",
+      "python/sglang/kernels/ops/activation/activation.py": "b10583b813290eb828205177e54758c5016561ccab2bb13786ad5d8ff8ea22fd",
+      "python/sglang/kernels/jit/csrc/elementwise/activation.cuh": "1f2274f0fab1538a632869ab2f857a6ddc42dfbd8ba56bf5c26adbeb6289a0f3",
+      "python/sglang/srt/layers/quantization/gguf.py": "73c952bec5b74cd2b1440334471c6201a1664b5d8f705e8ecd5407c786d3adc2",
+      "python/sglang/kernels/aot/csrc/quantization/gguf/gguf_kernel.cu": "9905943cd6987a139bf75753b0d2480bcfc5396f8cc9f0fe08d224451f098f32"
+    },
+    "integrated": {
+      "python/sglang/kernels/jit/utils/arch.py": "dc9789c480cbbcde565be8d93af765aaf3ae318789964b99e590ddf9409a8dab",
+      "python/sglang/kernels/ops/activation/activation.py": "b10583b813290eb828205177e54758c5016561ccab2bb13786ad5d8ff8ea22fd",
+      "python/sglang/kernels/jit/csrc/elementwise/activation.cuh": "1f2274f0fab1538a632869ab2f857a6ddc42dfbd8ba56bf5c26adbeb6289a0f3",
+      "python/sglang/srt/layers/quantization/gguf.py": "31e6290d7d6702340c9052e7650017ece1d7d754b91e8a9e5f74d0ac9d71ce49",
+      "python/sglang/kernels/aot/csrc/quantization/gguf/gguf_kernel.cu": "cb326ab310333ac1796df653bb514631cd98dcccf47403d45cf6591bde96daa0"
+    }
+  },
+  "test_kernel_binary_hashes": {
+    "main": "6f3c63eeaa7c1588bec229fbbb4f40e5164829636068d77e2df15dcec77f5e93",
+    "integrated": "ee85ba3df98e21a7fda4598961da08a48aacf8fb3cdf67b18000ae03bde062d2"
+  }
+}

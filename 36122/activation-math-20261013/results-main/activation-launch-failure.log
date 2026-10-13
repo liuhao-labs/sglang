@@ -1,0 +1,34 @@
+/usr/local/lib/python3.12/dist-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/usr/local/lib/python3.12/dist-packages/torchao/quantization/quant_api.py:1731: SyntaxWarning: invalid escape sequence '\.'
+  """Configuration class for applying different quantization configs to modules or parameters based on their fully qualified names (FQNs).
+{"activation_source": "/src/python/sglang/kernels/ops/activation/activation.py", "cache": "/probe/cache-main/jit", "capability": [12, 1], "cuda": "13.0", "device": "NVIDIA GB10", "kind": "provenance", "policy": ["--use_fast_math"], "seed": 35019, "torch": "2.11.0+cu130", "tvm_ffi": "0.1.11"}
+Cannot fingerprint compiler /probe/toolkit/bin/nvcc: [Errno 2] No such file or directory: '/probe/toolkit/bin/nvcc'
+Traceback (most recent call last):
+  File "/probe/activation_probe.py", line 61, in <module>
+    precise = act.activation_module(dtype, fast_math=False)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/src/python/sglang/kernels/jit/utils/common.py", line 39, in wrapper
+    result_map[key] = fn(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^
+  File "/src/python/sglang/kernels/ops/activation/activation.py", line 26, in activation_module
+    return load_jit(
+           ^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/_dynamo/eval_frame.py", line 1263, in _fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/src/python/sglang/kernels/jit/utils/compile/loader.py", line 178, in load_jit
+    library = ninja.build(spec=spec, build_dir=staging, build_file=build_file)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/src/python/sglang/kernels/jit/utils/compile/ninja.py", line 169, in build
+    raise RuntimeError(
+RuntimeError: Failed to build JIT module sgl_kernel_jit_rounded_activation_fp16_t_true in /probe/cache-main/jit/sm121a/sgl_kernel_jit_rounded_activation_fp16_t_true/build-a9f0abb414aaaa97/.staging-3d3c3707c11743a8936689b04243298e
+stdout:
+[1/2] /probe/toolkit/bin/nvcc -MD -MF "cuda_0.o.d" -Xcompiler -fPIC -gencode=arch=compute_121a,code=sm_121a -DSGL_CUDA_ARCH=1210 -std=c++20 -O3 --expt-relaxed-constexpr -I/usr/local/lib/python3.12/dist-packages/tvm_ffi/include -I/src/python/sglang/kernels/jit/include -c "cuda.cu" -o "cuda_0.o"
+FAILED: [code=127] cuda_0.o 
+/probe/toolkit/bin/nvcc -MD -MF "cuda_0.o.d" -Xcompiler -fPIC -gencode=arch=compute_121a,code=sm_121a -DSGL_CUDA_ARCH=1210 -std=c++20 -O3 --expt-relaxed-constexpr -I/usr/local/lib/python3.12/dist-packages/tvm_ffi/include -I/src/python/sglang/kernels/jit/include -c "cuda.cu" -o "cuda_0.o"
+/bin/sh: 1: /probe/toolkit/bin/nvcc: not found
+ninja: build stopped: subcommand failed.
+
+stderr:
+

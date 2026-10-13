@@ -1,0 +1,83 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-9.1.1, pluggy-1.6.0 -- /usr/bin/python3
+rootdir: /src/test
+configfile: pytest.ini
+plugins: anyio-4.14.2, typeguard-4.5.2
+collecting ... collected 0 items / 1 error
+
+==================================== ERRORS ====================================
+_ ERROR collecting registered/unit/layers/quantization/test_gguf_mmq_types.py __
+test/registered/unit/layers/quantization/test_gguf_mmq_types.py:9: in <module>
+    from sglang.srt.layers.quantization import gguf as gguf_quant
+python/sglang/srt/layers/quantization/__init__.py:9: in <module>
+    from sglang.srt.layers.quantization.awq import (
+python/sglang/srt/layers/quantization/awq/__init__.py:8: in <module>
+    from .awq import (
+python/sglang/srt/layers/quantization/awq/awq.py:10: in <module>
+    from sglang.srt.layers.linear import LinearBase
+python/sglang/srt/layers/linear.py:33: in <module>
+    from sglang.srt.layers.moe.utils import should_skip_mlp_all_reduce
+python/sglang/srt/layers/moe/__init__.py:1: in <module>
+    from sglang.srt.layers.moe.moe_runner import MoeRunner, MoeRunnerConfig
+python/sglang/srt/layers/moe/moe_runner/__init__.py:2: in <module>
+    from sglang.srt.layers.moe.moe_runner.runner import MoeRunner, register_moe_runner_core
+python/sglang/srt/layers/moe/moe_runner/runner.py:14: in <module>
+    from sglang.srt.layers.moe.moe_runner.deep_gemm import DeepGemmRunnerCore
+python/sglang/srt/layers/moe/moe_runner/deep_gemm.py:95: in <module>
+    @torch.compile(disable=_is_hip or _is_npu)
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/usr/local/lib/python3.12/dist-packages/torch/__init__.py:2700: in fn
+    return compile(  # pyrefly: ignore  # no-matching-overload
+/usr/local/lib/python3.12/dist-packages/torch/__init__.py:2758: in compile
+    return torch._dynamo.optimize(
+/usr/local/lib/python3.12/dist-packages/torch/_dynamo/eval_frame.py:1488: in optimize
+    return _optimize(rebuild_ctx, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/usr/local/lib/python3.12/dist-packages/torch/_dynamo/eval_frame.py:1564: in _optimize
+    backend = get_compiler_fn(backend)
+              ^^^^^^^^^^^^^^^^^^^^^^^^
+/usr/local/lib/python3.12/dist-packages/torch/_dynamo/eval_frame.py:1325: in get_compiler_fn
+    from .repro.after_dynamo import wrap_backend_debug
+/usr/local/lib/python3.12/dist-packages/torch/_dynamo/repro/after_dynamo.py:33: in <module>
+    from torch._dynamo.debug_utils import (
+/usr/local/lib/python3.12/dist-packages/torch/_dynamo/debug_utils.py:43: in <module>
+    from torch._dynamo.testing import rand_strided
+/usr/local/lib/python3.12/dist-packages/torch/_dynamo/testing.py:33: in <module>
+    from torch._dynamo.backends.debugging import aot_eager
+/usr/local/lib/python3.12/dist-packages/torch/_dynamo/backends/debugging.py:34: in <module>
+    from functorch.compile import min_cut_rematerialization_partition
+/usr/local/lib/python3.12/dist-packages/functorch/compile/__init__.py:2: in <module>
+    from torch._functorch.aot_autograd import (
+/usr/local/lib/python3.12/dist-packages/torch/_functorch/aot_autograd.py:38: in <module>
+    from ._aot_autograd.autograd_cache import (  # noqa: F401
+/usr/local/lib/python3.12/dist-packages/torch/_functorch/_aot_autograd/autograd_cache.py:27: in <module>
+    from torch._inductor.codecache import (
+/usr/local/lib/python3.12/dist-packages/torch/_inductor/codecache.py:2753: in <module>
+    _HEADER_DIR = os.path.join(default_cache_dir(), "precompiled_headers")
+                               ^^^^^^^^^^^^^^^^^^^
+/usr/local/lib/python3.12/dist-packages/torch/_inductor/runtime/cache_dir_utils.py:23: in default_cache_dir
+    sanitized_username = re.sub(r'[\\/:*?"<>|]', "_", getpass.getuser())
+                                                      ^^^^^^^^^^^^^^^^^
+/usr/lib/python3.12/getpass.py:169: in getuser
+    return pwd.getpwuid(os.getuid())[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+E   KeyError: 'getpwuid(): uid not found: 1004'
+=============================== warnings summary ===============================
+../usr/local/lib/python3.12/dist-packages/_pytest/config/__init__.py:1464
+  /usr/local/lib/python3.12/dist-packages/_pytest/config/__init__.py:1464: PytestConfigWarning: Unknown config option: asyncio_mode
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+../usr/local/lib/python3.12/dist-packages/torch/cuda/__init__.py:61
+  /usr/local/lib/python3.12/dist-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+    import pynvml  # type: ignore[import]
+
+../usr/local/lib/python3.12/dist-packages/torchao/quantization/quant_api.py:1731
+  /usr/local/lib/python3.12/dist-packages/torchao/quantization/quant_api.py:1731: SyntaxWarning: invalid escape sequence '\.'
+    """Configuration class for applying different quantization configs to modules or parameters based on their fully qualified names (FQNs).
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+ERROR test/registered/unit/layers/quantization/test_gguf_mmq_types.py - KeyError: 'getpwuid(): uid not found: 1004'
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+========================= 3 warnings, 1 error in 9.77s =========================

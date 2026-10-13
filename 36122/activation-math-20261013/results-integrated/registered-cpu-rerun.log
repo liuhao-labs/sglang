@@ -1,0 +1,59 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-9.1.1, pluggy-1.6.0 -- /usr/bin/python3
+rootdir: /src/test
+configfile: pytest.ini
+plugins: anyio-4.14.2, typeguard-4.5.2
+collecting ... collected 10 items
+
+test/registered/unit/layers/quantization/test_gguf_mmq_types.py::TestGGUFMMQTypes::test_dense_kernel_selection PASSED [ 10%]
+test/registered/unit/layers/quantization/test_gguf_mmq_types.py::TestGGUFMMQTypes::test_dense_selector_terminal_paths PASSED [ 20%]
+test/registered/unit/layers/quantization/test_gguf_mmq_types.py::TestGGUFMMQTypes::test_empty_dense_input_bypasses_selector PASSED [ 30%]
+test/registered/unit/layers/quantization/test_gguf_mmq_types.py::TestGGUFMMQTypes::test_fused_moe_uses_high_level_align_wrapper PASSED [ 40%]
+test/registered/unit/layers/quantization/test_gguf_mmq_types.py::TestGGUFMMQTypes::test_fused_moe_uses_vector_fallback_below_iq_threshold PASSED [ 50%]
+test/registered/unit/layers/quantization/test_gguf_mmq_types.py::TestGGUFMMQTypes::test_iq_mmq_requires_new_kernel_capability PASSED [ 60%]
+test/registered/unit/layers/quantization/test_gguf_mmq_types.py::TestGGUFMMQTypes::test_moe_iq_mmq_requires_reuse PASSED [ 70%]
+test/registered/unit/layers/quantization/test_gguf_mmq_types.py::TestGGUFMMQTypes::test_moe_kernel_selection PASSED [ 80%]
+test/registered/unit/layers/quantization/test_gguf_mmq_types.py::TestGGUFMMQTypes::test_old_kernel_capability_keeps_iq_fallbacks PASSED [ 90%]
+test/registered/unit/layers/quantization/test_gguf_mmq_types.py::TestGGUFMMQTypes::test_only_upstream_supported_iq_types_are_registered PASSED [100%]
+
+=============================== warnings summary ===============================
+../usr/local/lib/python3.12/dist-packages/_pytest/config/__init__.py:1464
+  /usr/local/lib/python3.12/dist-packages/_pytest/config/__init__.py:1464: PytestConfigWarning: Unknown config option: asyncio_mode
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+../usr/local/lib/python3.12/dist-packages/torch/cuda/__init__.py:61
+  /usr/local/lib/python3.12/dist-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+    import pynvml  # type: ignore[import]
+
+../usr/local/lib/python3.12/dist-packages/torchao/quantization/quant_api.py:1731
+  /usr/local/lib/python3.12/dist-packages/torchao/quantization/quant_api.py:1731: SyntaxWarning: invalid escape sequence '\.'
+    """Configuration class for applying different quantization configs to modules or parameters based on their fully qualified names (FQNs).
+
+../usr/local/lib/python3.12/dist-packages/torch/jit/_script.py:365: 14 warnings
+  /usr/local/lib/python3.12/dist-packages/torch/jit/_script.py:365: DeprecationWarning: `torch.jit.script_method` is deprecated. Please switch to `torch.compile` or `torch.export`.
+    warnings.warn(
+
+python/sglang/srt/layers/quantization/awq/awq.py:53
+  /src/python/sglang/srt/layers/quantization/awq/awq.py:53: UserWarning: Only CUDA, HIP and XPU support AWQ currently.
+    warnings.warn(f"Only CUDA, HIP and XPU support AWQ currently.")
+
+../usr/local/lib/python3.12/dist-packages/flashinfer/gemm/kernels/grouped_gemm_masked_blackwell.py:2383
+  /usr/local/lib/python3.12/dist-packages/flashinfer/gemm/kernels/grouped_gemm_masked_blackwell.py:2383: DeprecationWarning: tcgen05.OperandMajorMode is deprecated, use cute.nvgpu.OperandMajorMode instead
+    a_major_mode: tcgen05.OperandMajorMode,
+
+../usr/local/lib/python3.12/dist-packages/flashinfer/gemm/kernels/grouped_gemm_masked_blackwell.py:2385
+  /usr/local/lib/python3.12/dist-packages/flashinfer/gemm/kernels/grouped_gemm_masked_blackwell.py:2385: DeprecationWarning: tcgen05.OperandMajorMode is deprecated, use cute.nvgpu.OperandMajorMode instead
+    b_major_mode: tcgen05.OperandMajorMode,
+
+../usr/local/lib/python3.12/dist-packages/flashinfer/gdn_kernels/blackwell/gated_delta_net_chunked.py:99
+../usr/local/lib/python3.12/dist-packages/flashinfer/gdn_kernels/blackwell/gated_delta_net_chunked.py:99
+  /usr/local/lib/python3.12/dist-packages/flashinfer/gdn_kernels/blackwell/gated_delta_net_chunked.py:99: DeprecationWarning: tcgen05.OperandMajorMode is deprecated, use cute.nvgpu.OperandMajorMode instead
+    from cutlass.cute.nvgpu.tcgen05 import OperandMajorMode
+
+python/sglang/srt/layers/quantization/gguf.py:80
+  /src/python/sglang/srt/layers/quantization/gguf.py:80: UserWarning: Only CUDA, MUSA and NPU support GGUF quantization currently.
+    warnings.warn(f"Only CUDA, MUSA and NPU support GGUF quantization currently.")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+======================= 10 passed, 23 warnings in 12.63s =======================

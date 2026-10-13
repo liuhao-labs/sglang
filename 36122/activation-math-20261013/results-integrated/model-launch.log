@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/probe/model_client.py", line 17, in <module>
+    raise RuntimeError('server failed during startup; see model-server.log')
+RuntimeError: server failed during startup; see model-server.log
