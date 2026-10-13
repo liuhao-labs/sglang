@@ -1,0 +1,121 @@
+2026-10-13T21:23:02+08:00
+memory.current
+10992062464
+memory.peak
+11894407168
+memory.events
+low 0
+high 0
+max 0
+oom 0
+oom_kill 0
+oom_group_kill 0
+2026-10-13T21:23:51+08:00
+memory.current
+3214921728
+memory.peak
+12231274496
+memory.events
+low 0
+high 0
+max 0
+oom 0
+oom_kill 0
+oom_group_kill 0
+2026-10-13T21:25:09+08:00
+memory.current
+3271753728
+memory.peak
+12231274496
+memory.events
+low 0
+high 0
+max 0
+oom 0
+oom_kill 0
+oom_group_kill 0
+2026-10-13T21:26:08+08:00
+memory.current
+995823616
+memory.peak
+12231274496
+memory.events
+low 0
+high 0
+max 0
+oom 0
+oom_kill 0
+oom_group_kill 0
+2026-10-13T21:29:16+08:00
+memory.current
+5882032128
+memory.peak
+13947006976
+memory.events
+low 0
+high 0
+max 0
+oom 0
+oom_kill 0
+oom_group_kill 0
+2026-10-13T21:30:48+08:00
+memory.current
+14598553600
+memory.peak
+14599004160
+memory.events
+low 0
+high 0
+max 0
+oom 0
+oom_kill 0
+oom_group_kill 0
+2026-10-13T21:32:00+08:00
+memory.current
+4652716032
+memory.peak
+15032385536
+memory.events
+low 0
+high 0
+max 847
+oom 1
+oom_kill 1
+oom_group_kill 0
+2026-10-13T21:35:42+08:00
+memory.current
+2256052224
+memory.peak
+3439005696
+memory.events
+low 0
+high 0
+max 0
+oom 0
+oom_kill 0
+oom_group_kill 0
+2026-10-13T21:37:19+08:00
+memory.current
+2986557440
+memory.peak
+11970093056
+memory.events
+low 0
+high 0
+max 0
+oom 0
+oom_kill 0
+oom_group_kill 0
+2026-10-13T21:38:54+08:00
+memory.current
+7193272320
+memory.peak
+11970093056
+memory.events
+low 0
+high 0
+max 0
+oom 0
+oom_kill 0
+oom_group_kill 0
+Error response from daemon: No such container: pr36122-full-wheel-build

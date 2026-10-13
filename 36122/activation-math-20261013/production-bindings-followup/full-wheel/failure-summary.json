@@ -1,0 +1,74 @@
+{
+  "status": "RESOURCE_BLOCKED",
+  "torch": "2.14.1+cu130",
+  "cuda_toolkit": "13.0.88",
+  "full_wheel_produced": false,
+  "capability_true_full_wheel_validation": false,
+  "planned_80_enabled_production_cases_executed": false,
+  "planned_153_full_wheel_aot_cases_executed": false,
+  "build_workers": 1,
+  "nvcc_threads": 1,
+  "max_container_memory_gib": 14,
+  "attempts": [
+    {
+      "log": "build-attempt-1.log",
+      "exit": "build-exit-1.json",
+      "result": "configuration failure: unextracted CUTLASS submodule; corrected",
+      "exit_codes": {
+        "docker_exit_code": 1,
+        "tee_exit_code": 0
+      }
+    },
+    {
+      "log": "build-attempt-2.log",
+      "exit": "build-exit-2.json",
+      "result": "stopped experiment: stale Torch library CMake cache; corrected with clean build",
+      "exit_codes": {
+        "docker_exit_code": 143,
+        "tee_exit_code": 0
+      }
+    },
+    {
+      "log": "build-attempt-3-memory10g.log",
+      "exit": "build-exit-3.json",
+      "result": "default full build, 10 GiB cgroup OOM, es_fp8_blockwise.cu",
+      "exit_codes": {
+        "docker_exit_code": 1,
+        "tee_exit_code": 0
+      }
+    },
+    {
+      "log": "build-attempt-4-memory14g.log",
+      "exit": "build-exit-4.json",
+      "result": "default full build, 14 GiB cgroup OOM, fp8_gemm_kernel.cu",
+      "exit_codes": {
+        "docker_exit_code": 1,
+        "tee_exit_code": 0
+      }
+    },
+    {
+      "log": "build-attempt.log",
+      "exit": "build-exit.json",
+      "result": "all-source/all-default-target build with SM121a-only common_ops, 14 GiB cgroup OOM, fp8_gemm_kernel.cu",
+      "exit_codes": {
+        "docker_exit_code": 1,
+        "tee_exit_code": 0
+      }
+    }
+  ],
+  "oom_event_count": 3,
+  "unchanged_failing_source_units": [
+    {
+      "path": "python/sglang/kernels/aot/csrc/expert_specialization/es_fp8_blockwise.cu",
+      "main_blob": "f985226d796d35aaf958999d957ed57e29699017",
+      "integration_blob": "f985226d796d35aaf958999d957ed57e29699017"
+    },
+    {
+      "path": "python/sglang/kernels/aot/csrc/gemm/fp8_gemm_kernel.cu",
+      "main_blob": "0a3895e48af83e73f4f460c92c0b1c31e4d991c0",
+      "integration_blob": "0a3895e48af83e73f4f460c92c0b1c31e4d991c0"
+    }
+  ],
+  "reason_no_further_memory_increase": "protect live service on shared unified-memory device; initial available memory about 27.8 GiB",
+  "scope": "build resource failures; no reproduced GGUF numerical/source regression"
+}

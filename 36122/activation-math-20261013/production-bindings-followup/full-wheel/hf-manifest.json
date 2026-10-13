@@ -1,0 +1,303 @@
+[
+  {
+    "repo": "Isotr0py/test-gguf-sample",
+    "revision": "d82b8773934ef260d8d8a896a7c197bc69a0fac1",
+    "file": "Quant_IQ1_M_1024.gguf",
+    "sha256": "72e7e233548fdd96799bb00f104bf64023da630e4e8c79b431119d41e2baab13",
+    "size": 6250880
+  },
+  {
+    "repo": "Isotr0py/test-gguf-sample",
+    "revision": "d82b8773934ef260d8d8a896a7c197bc69a0fac1",
+    "file": "Quant_IQ1_M_256.gguf",
+    "sha256": "0c7da1f9d23bd7b99a0cec767f278eaa2ecb054778327ae92deea367aa1feba7",
+    "size": 1563008
+  },
+  {
+    "repo": "Isotr0py/test-gguf-sample",
+    "revision": "d82b8773934ef260d8d8a896a7c197bc69a0fac1",
+    "file": "Quant_IQ1_S_1024.gguf",
+    "sha256": "dea6372848ae8ba284481148ea282dde3c56d145eba5768f7d72a1527bf71a96",
+    "size": 5581184
+  },
+  {
+    "repo": "Isotr0py/test-gguf-sample",
+    "revision": "d82b8773934ef260d8d8a896a7c197bc69a0fac1",
+    "file": "Quant_IQ1_S_256.gguf",
+    "sha256": "52f0fba7e7f50821a343205c62948beef7f2320a52897ac197562ad975fe8ce7",
+    "size": 1395584
+  },
+  {
+    "repo": "Isotr0py/test-gguf-sample",
+    "revision": "d82b8773934ef260d8d8a896a7c197bc69a0fac1",
+    "file": "Quant_IQ2_S_1024.gguf",
+    "sha256": "8938259277b08682b596056ac63c8b347a6861ef3dfa7c8dd7f5466d26e4d6d6",
+    "size": 9152896
+  },
+  {
+    "repo": "Isotr0py/test-gguf-sample",
+    "revision": "d82b8773934ef260d8d8a896a7c197bc69a0fac1",
+    "file": "Quant_IQ2_S_256.gguf",
+    "sha256": "80207b4810ead2fb41ff8b42fe8a1c95d67626ed26f459b4d3e06cc4b78e4e17",
+    "size": 2288512
+  },
+  {
+    "repo": "Isotr0py/test-gguf-sample",
+    "revision": "d82b8773934ef260d8d8a896a7c197bc69a0fac1",
+    "file": "Quant_IQ2_XS_1024.gguf",
+    "sha256": "91871db5d358233b40a687de99d6d6fe15839dee4b37eeb3d98c1f8fbf8d43fc",
+    "size": 8259968
+  },
+  {
+    "repo": "Isotr0py/test-gguf-sample",
+    "revision": "d82b8773934ef260d8d8a896a7c197bc69a0fac1",
+    "file": "Quant_IQ2_XS_256.gguf",
+    "sha256": "7ca899750b6ae8902b4a4e219e153ff6c1d99f7d2074b76b47bd1cc13721607a",
+    "size": 2065280
+  },
+  {
+    "repo": "Isotr0py/test-gguf-sample",
+    "revision": "d82b8773934ef260d8d8a896a7c197bc69a0fac1",
+    "file": "Quant_IQ2_XXS_1024.gguf",
+    "sha256": "1946509f1c1ba47146b77645859b70e95f4ec0582e161d4a5693b860e5953fe8",
+    "size": 7367072
+  },
+  {
+    "repo": "Isotr0py/test-gguf-sample",
+    "revision": "d82b8773934ef260d8d8a896a7c197bc69a0fac1",
+    "file": "Quant_IQ2_XXS_256.gguf",
+    "sha256": "98cd99fab6415ec0115423bf91f51915febb06e4da9e6ef7e061a90fbff8659e",
+    "size": 1842048
+  },
+  {
+    "repo": "Isotr0py/test-gguf-sample",
+    "revision": "d82b8773934ef260d8d8a896a7c197bc69a0fac1",
+    "file": "Quant_IQ3_S_1024.gguf",
+    "sha256": "ed04c0b1929333bc25fcda2b77d630944690de08f1f194e2849a2f00702f30f3",
+    "size": 12278144
+  },
+  {
+    "repo": "Isotr0py/test-gguf-sample",
+    "revision": "d82b8773934ef260d8d8a896a7c197bc69a0fac1",
+    "file": "Quant_IQ3_S_256.gguf",
+    "sha256": "1852ac6ccb0e10c8dfe47b23034f57cb3efae4c38377243b40847064cac1d7cf",
+    "size": 3069824
+  },
+  {
+    "repo": "Isotr0py/test-gguf-sample",
+    "revision": "d82b8773934ef260d8d8a896a7c197bc69a0fac1",
+    "file": "Quant_IQ3_XXS_1024.gguf",
+    "sha256": "6eb74c3e749f758125ad6c2aae24481bd918e65703a099557109d18302f39d77",
+    "size": 10938784
+  },
+  {
+    "repo": "Isotr0py/test-gguf-sample",
+    "revision": "d82b8773934ef260d8d8a896a7c197bc69a0fac1",
+    "file": "Quant_IQ3_XXS_256.gguf",
+    "sha256": "0150e9a21ecbed3f47b1b1d61bcccd0c00815e6cd84c8ef7d9f10d2f76568b72",
+    "size": 2734976
+  },
+  {
+    "repo": "Isotr0py/test-gguf-sample",
+    "revision": "d82b8773934ef260d8d8a896a7c197bc69a0fac1",
+    "file": "Quant_IQ4_NL_1024.gguf",
+    "sha256": "05e0ca6956e3d036dd3d9edd055e8087e0ac6376c0032613498974759c752bd1",
+    "size": 16073088
+  },
+  {
+    "repo": "Isotr0py/test-gguf-sample",
+    "revision": "d82b8773934ef260d8d8a896a7c197bc69a0fac1",
+    "file": "Quant_IQ4_NL_256.gguf",
+    "sha256": "d3d86e735abf49c57e02e83ad6750ac9bf216a9a884a8eaf097aebcc0422540c",
+    "size": 4018560
+  },
+  {
+    "repo": "Isotr0py/test-gguf-sample",
+    "revision": "d82b8773934ef260d8d8a896a7c197bc69a0fac1",
+    "file": "Quant_IQ4_XS_1024.gguf",
+    "sha256": "5ef94e3cec7c9ff42d0fbc7705f425162fd3e00253dd05a62cc17e6bc85451c4",
+    "size": 15180160
+  },
+  {
+    "repo": "Isotr0py/test-gguf-sample",
+    "revision": "d82b8773934ef260d8d8a896a7c197bc69a0fac1",
+    "file": "Quant_IQ4_XS_256.gguf",
+    "sha256": "6039ca86d3c50cfc8db68b0394450ac1135affb8f07890af537865fb1dd5d23c",
+    "size": 3795328
+  },
+  {
+    "repo": "Isotr0py/test-gguf-sample",
+    "revision": "d82b8773934ef260d8d8a896a7c197bc69a0fac1",
+    "file": "Quant_Q2_K_1024.gguf",
+    "sha256": "8383805d71bf8252c30dbd59662dafb5ce6c29a71b8e74b349b708327c541703",
+    "size": 9376128
+  },
+  {
+    "repo": "Isotr0py/test-gguf-sample",
+    "revision": "d82b8773934ef260d8d8a896a7c197bc69a0fac1",
+    "file": "Quant_Q2_K_256.gguf",
+    "sha256": "a5f0df4b88193d1c5102d39113ae8ab86b23678ad5bbf459d05d1b88119ec084",
+    "size": 2344320
+  },
+  {
+    "repo": "Isotr0py/test-gguf-sample",
+    "revision": "d82b8773934ef260d8d8a896a7c197bc69a0fac1",
+    "file": "Quant_Q3_K_1024.gguf",
+    "sha256": "af666e306231f864fbd3fb7047f3980f058d070478a60b6790e1a823d773c406",
+    "size": 12278144
+  },
+  {
+    "repo": "Isotr0py/test-gguf-sample",
+    "revision": "d82b8773934ef260d8d8a896a7c197bc69a0fac1",
+    "file": "Quant_Q3_K_256.gguf",
+    "sha256": "1bc430759c9768783b08118323ec795bcffa62d9551933140a22f84c7135aade",
+    "size": 3069824
+  },
+  {
+    "repo": "Isotr0py/test-gguf-sample",
+    "revision": "d82b8773934ef260d8d8a896a7c197bc69a0fac1",
+    "file": "Quant_Q4_0_1024.gguf",
+    "sha256": "704bd822cde61be8437216089bc0240658869732316d7bbacf7e53de4f584797",
+    "size": 16073088
+  },
+  {
+    "repo": "Isotr0py/test-gguf-sample",
+    "revision": "d82b8773934ef260d8d8a896a7c197bc69a0fac1",
+    "file": "Quant_Q4_0_256.gguf",
+    "sha256": "380dd142b886bc7b537e9ba3569019560d68dd3aa13385b6c848121f0e33e23e",
+    "size": 4018560
+  },
+  {
+    "repo": "Isotr0py/test-gguf-sample",
+    "revision": "d82b8773934ef260d8d8a896a7c197bc69a0fac1",
+    "file": "Quant_Q4_K_1024.gguf",
+    "sha256": "00577c14c413f41d179dd11f5c92e0e3f1b9ed0c2ab410a0960f493db9d32c6b",
+    "size": 16073088
+  },
+  {
+    "repo": "Isotr0py/test-gguf-sample",
+    "revision": "d82b8773934ef260d8d8a896a7c197bc69a0fac1",
+    "file": "Quant_Q4_K_256.gguf",
+    "sha256": "c6256d86c59bc96db1eada611ec1fccb147eb3a738e3693cd2a68a497df77f53",
+    "size": 4018560
+  },
+  {
+    "repo": "Isotr0py/test-gguf-sample",
+    "revision": "d82b8773934ef260d8d8a896a7c197bc69a0fac1",
+    "file": "Quant_Q5_0_1024.gguf",
+    "sha256": "18251212453fcd01d04d7e7a5c2b847f48ec8a4c063a18d2a7c15122697354f7",
+    "size": 19644800
+  },
+  {
+    "repo": "Isotr0py/test-gguf-sample",
+    "revision": "d82b8773934ef260d8d8a896a7c197bc69a0fac1",
+    "file": "Quant_Q5_0_256.gguf",
+    "sha256": "8b8b03108ff423bc85d99ee03b99dad7138364c9a7fcac9da97b03c89696dd88",
+    "size": 4911488
+  },
+  {
+    "repo": "Isotr0py/test-gguf-sample",
+    "revision": "d82b8773934ef260d8d8a896a7c197bc69a0fac1",
+    "file": "Quant_Q5_K_1024.gguf",
+    "sha256": "e0af3999f1bb469be5c6b951b134d7bf95aa2fa8f65d8656e3acd9dec35de4ee",
+    "size": 19644800
+  },
+  {
+    "repo": "Isotr0py/test-gguf-sample",
+    "revision": "d82b8773934ef260d8d8a896a7c197bc69a0fac1",
+    "file": "Quant_Q5_K_256.gguf",
+    "sha256": "dabf970e3c496be2c512d8afbcbea22d9ba958867a7ed50a36a71e1fd523635e",
+    "size": 4911488
+  },
+  {
+    "repo": "Isotr0py/test-gguf-sample",
+    "revision": "d82b8773934ef260d8d8a896a7c197bc69a0fac1",
+    "file": "Quant_Q6_K_1024.gguf",
+    "sha256": "e7d173382ec11eaa6ae981e8600dce38196203f193433df95ab83944fb4508cc",
+    "size": 23439744
+  },
+  {
+    "repo": "Isotr0py/test-gguf-sample",
+    "revision": "d82b8773934ef260d8d8a896a7c197bc69a0fac1",
+    "file": "Quant_Q6_K_256.gguf",
+    "sha256": "b2c8f71efa6a27204ae1c111eb1cecf4617cd3a07be5e7be80fb28e6cbe23839",
+    "size": 5860224
+  },
+  {
+    "repo": "Isotr0py/test-gguf-sample",
+    "revision": "d82b8773934ef260d8d8a896a7c197bc69a0fac1",
+    "file": "Quant_Q8_0_1024.gguf",
+    "sha256": "4f7f1fbeade44af1cadcf57287eec4dcbadcaf7da650edd07e49a9f699007666",
+    "size": 30359936
+  },
+  {
+    "repo": "Isotr0py/test-gguf-sample",
+    "revision": "d82b8773934ef260d8d8a896a7c197bc69a0fac1",
+    "file": "Quant_Q8_0_256.gguf",
+    "sha256": "c27d7a1c1acd5b8176c320eb0f4a6bf0a23e53cfe460f6fc9b86b69422bc2b17",
+    "size": 7590272
+  },
+  {
+    "repo": "SzymonOzog/test-gguf-moe-sample",
+    "revision": "2b77eb27ae2ea4b3f68cf3042961509a9f5847b8",
+    "file": "Quant_IQ1_S_512.gguf",
+    "sha256": "376a05a791382d204e0af88babdeccd312564e985e8e4aea76be4a6e32dd915f",
+    "size": 78643424
+  },
+  {
+    "repo": "SzymonOzog/test-gguf-moe-sample",
+    "revision": "2b77eb27ae2ea4b3f68cf3042961509a9f5847b8",
+    "file": "Quant_IQ2_S_512.gguf",
+    "sha256": "bcd66913346fbfb1722614f860190ac2cad89775cdeb7a67775c8de467e142cf",
+    "size": 128975072
+  },
+  {
+    "repo": "SzymonOzog/test-gguf-moe-sample",
+    "revision": "2b77eb27ae2ea4b3f68cf3042961509a9f5847b8",
+    "file": "Quant_IQ2_XS_512.gguf",
+    "sha256": "89ac44fda8168a7eaca284f07fff7313eb9b2d46805d2d91a07bc8f407296b01",
+    "size": 116392160
+  },
+  {
+    "repo": "SzymonOzog/test-gguf-moe-sample",
+    "revision": "2b77eb27ae2ea4b3f68cf3042961509a9f5847b8",
+    "file": "Quant_IQ2_XXS_512.gguf",
+    "sha256": "f437f87a70ca28c834ef176b554dab6a10003030d92bcbfadde08d167446c4cb",
+    "size": 103809248
+  },
+  {
+    "repo": "SzymonOzog/test-gguf-moe-sample",
+    "revision": "2b77eb27ae2ea4b3f68cf3042961509a9f5847b8",
+    "file": "Quant_IQ3_S_512.gguf",
+    "sha256": "757255ec644b92f32b5c64990046506f603c32e8366273f14260c67edbb357e0",
+    "size": 173015264
+  },
+  {
+    "repo": "SzymonOzog/test-gguf-moe-sample",
+    "revision": "2b77eb27ae2ea4b3f68cf3042961509a9f5847b8",
+    "file": "Quant_IQ3_XXS_512.gguf",
+    "sha256": "ed163f627f85eb0726a6df0f6973b56a8b49c3595726fc35005cad7bd84dd5ce",
+    "size": 154140896
+  },
+  {
+    "repo": "SzymonOzog/test-gguf-moe-sample",
+    "revision": "2b77eb27ae2ea4b3f68cf3042961509a9f5847b8",
+    "file": "Quant_IQ4_NL_512.gguf",
+    "sha256": "a415f2a9fefedaaff0fa8db91cf00f7d65ba0ad3dac4bda3b875d123fe9efee6",
+    "size": 226492640
+  },
+  {
+    "repo": "SzymonOzog/test-gguf-moe-sample",
+    "revision": "2b77eb27ae2ea4b3f68cf3042961509a9f5847b8",
+    "file": "Quant_IQ4_XS_512.gguf",
+    "sha256": "4bcd7092ac37cad5f92403a0f61ac086ab9f16075431a98c3aadc1ff9c898e7d",
+    "size": 213909728
+  },
+  {
+    "repo": "SzymonOzog/test-gguf-moe-sample",
+    "revision": "2b77eb27ae2ea4b3f68cf3042961509a9f5847b8",
+    "file": "Quant_Q5_0_512.gguf",
+    "sha256": "09fbfc5ac5d846b515749d7b21b73b7a9a227db4b3d99409fb263164de863f41",
+    "size": 276824288
+  }
+]

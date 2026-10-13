@@ -1,0 +1,525 @@
+{
+  "head": "0a39ec3a8754e3c4426950a5a93046c048a03f07",
+  "base": "6e7beace143964386ce2e4418401b7369f0dabd0",
+  "frozen_main": "7ff3a112846a3fcc12a27bba09d644885a226e4d",
+  "latest_main": "27b68303d043ddbddf9861c55c26bc8617ea7c35",
+  "changed_paths": [
+    "docs/cookbook/autoregressive/GLM/GLM-5.3-Flash.mdx",
+    "docs/cookbook/autoregressive/Moonshotai/Kimi-K3.mdx",
+    "docs/cookbook/diffusion/MiniMax/MiniMax-H3.mdx",
+    "docs/docs/advanced_features/attention_backend.mdx",
+    "docs/docs/hardware-platforms/ascend-npus/reference/support_features.mdx",
+    "docs/docs/references/environment_variables.mdx",
+    "docs/src/snippets/configs/MiniMaxAI/minimax-h3.jsx",
+    "docs/src/snippets/configs/moonshotai/kimi-k3.jsx",
+    "docs/src/snippets/configs/zai-org/glm-5.3-flash-benchmarks.jsx",
+    "docs/src/snippets/configs/zai-org/glm-5.3-flash.jsx",
+    "python/sglang/kernels/ops/attention/dsa/dequant_k_cache.py",
+    "python/sglang/kernels/ops/kvcache/cache_ops.py",
+    "python/sglang/multimodal_gen/apps/ComfyUI_SGLDiffusion/README.md",
+    "python/sglang/multimodal_gen/apps/ComfyUI_SGLDiffusion/core/generator.py",
+    "python/sglang/multimodal_gen/apps/ComfyUI_SGLDiffusion/executors/qwen_image21.py",
+    "python/sglang/multimodal_gen/apps/ComfyUI_SGLDiffusion/nodes.py",
+    "python/sglang/multimodal_gen/apps/ComfyUI_SGLDiffusion/workflows/qwen_image21_t2i_sgld.json",
+    "python/sglang/multimodal_gen/configs/sample/minimax_h3.py",
+    "python/sglang/multimodal_gen/runtime/loader/comfyui_checkpoints/__init__.py",
+    "python/sglang/multimodal_gen/runtime/loader/comfyui_checkpoints/qwen_image21.py",
+    "python/sglang/multimodal_gen/runtime/loader/comfyui_checkpoints/spec.py",
+    "python/sglang/multimodal_gen/runtime/pipelines/qwen_image21.py",
+    "python/sglang/multimodal_gen/runtime/pipelines_core/stages/model_specific_stages/minimax_h3/constants.py",
+    "python/sglang/multimodal_gen/runtime/pipelines_core/stages/model_specific_stages/minimax_h3/prequeue.py",
+    "python/sglang/multimodal_gen/runtime/pipelines_core/stages/model_specific_stages/minimax_h3/reference_encoding.py",
+    "python/sglang/multimodal_gen/runtime/pipelines_core/stages/model_specific_stages/minimax_h3/video_adapter.py",
+    "python/sglang/multimodal_gen/runtime/pipelines_core/stages/model_specific_stages/qwen_image21.py",
+    "python/sglang/multimodal_gen/test/unit/test_comfyui_checkpoint_spec.py",
+    "python/sglang/multimodal_gen/test/unit/test_comfyui_qwen_image21.py",
+    "python/sglang/multimodal_gen/test/unit/test_minimax_h3_admission.py",
+    "python/sglang/multimodal_gen/test/unit/test_minimax_h3_media.py",
+    "python/sglang/srt/arg_groups/fields/spec.py",
+    "python/sglang/srt/arg_groups/overrides.py",
+    "python/sglang/srt/disaggregation/mooncake/conn.py",
+    "python/sglang/srt/disaggregation/mori/conn.py",
+    "python/sglang/srt/disaggregation/nixl/conn.py",
+    "python/sglang/srt/disaggregation/utils.py",
+    "python/sglang/srt/entrypoints/openai/protocol.py",
+    "python/sglang/srt/environ.py",
+    "python/sglang/srt/layers/attention/dsa/dsa_backend_kpool.py",
+    "python/sglang/srt/layers/attention/dsa_backend.py",
+    "python/sglang/srt/layers/attention/linear/gdn_backend.py",
+    "python/sglang/srt/layers/attention/mamba/mamba2_metadata.py",
+    "python/sglang/srt/layers/moe/flashinfer_megamoe.py",
+    "python/sglang/srt/layers/moe/flashinfer_megamoe_autotune.py",
+    "python/sglang/srt/layers/moe/utils.py",
+    "python/sglang/srt/layers/quantization/compressed_tensors/README.md",
+    "python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors.py",
+    "python/sglang/srt/layers/quantization/compressed_tensors/schemes/__init__.py",
+    "python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w4a16_nvfp4.py",
+    "python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w4a16_nvfp4_moe.py",
+    "python/sglang/srt/layers/quantization/marlin_utils_fp4.py",
+    "python/sglang/srt/mem_cache/kv_cache_configurator.py",
+    "python/sglang/srt/model_executor/runner/flashinfer_autotune.py",
+    "python/sglang/srt/models/nano_nemotron_vl.py",
+    "python/sglang/srt/multimodal/evs/evs_module.py",
+    "python/sglang/srt/multimodal/processors/nano_nemotron_vl.py",
+    "python/sglang/srt/runtime_context.py",
+    "python/sglang/srt/utils/common.py",
+    "python/sglang/srt/utils/hf_transformers_patches.py",
+    "python/sglang/test/kits/eval_accuracy_kit.py",
+    "test/registered/attention/test_gdn_prefill_layout.py",
+    "test/registered/e2e/models/test_glm53_flash_b200.py",
+    "test/registered/e2e/models/test_glm53_flash_h200.py",
+    "test/registered/kernels/ops/attention/test_q8kv8_dsa_nope_bf16_prefill.py",
+    "test/registered/kernels/ops/gemm/test_pi05_modelopt_fp8_cuda.py",
+    "test/registered/kernels/ops/quantization/test_compressed_tensors_fp4_numeric.py",
+    "test/registered/observability/test_tracing.py",
+    "test/registered/unit/disaggregation/test_disaggregation_wire.py",
+    "test/registered/unit/entrypoints/openai/test_protocol.py",
+    "test/registered/unit/entrypoints/openai/test_serving_chat.py",
+    "test/registered/unit/layers/attention/test_dsa_q8kv8_bf16_prefill_routing.py",
+    "test/registered/unit/layers/attention/test_gdn_prefill_backend_policy.py",
+    "test/registered/unit/layers/attention/test_mamba_track_state_dtype.py",
+    "test/registered/unit/layers/moe/test_flashinfer_megamoe.py",
+    "test/registered/unit/layers/quantization/test_compressed_tensors_fp4_schemes.py",
+    "test/registered/unit/model_executor/runner/test_flashinfer_autotune_sync.py",
+    "test/registered/unit/model_executor/test_pool_configurator.py",
+    "test/registered/unit/models/test_nano_nemotron_vl.py",
+    "test/registered/unit/multimodal/test_evs.py",
+    "test/registered/unit/multimodal/test_nano_nemotron_vl_processor.py",
+    "test/registered/unit/test_model_overrides.py",
+    "test/registered/unit/test_runtime_context.py",
+    "test/registered/unit/utils/test_hf_transformers.py"
+  ],
+  "latest_integration_sha": "449c32e493e80e67190fcf1f61976dc6045159e9",
+  "latest_integration_tree": "bb5c83cc334e80c51e6a0eb44045a5358c189162",
+  "latest_integration_aot_tree": "bbb2a30ede10936904ec0fd1d2d4922b1b810016",
+  "pr_path_intersection": [],
+  "core_changed": [],
+  "blob_comparison": [
+    {
+      "path": "python/pyproject.toml",
+      "frozen_blob": "c1cff46ed9c44befa0e93335777cdf8b9983738f",
+      "latest_blob": "c1cff46ed9c44befa0e93335777cdf8b9983738f",
+      "unchanged": true
+    },
+    {
+      "path": "python/sglang/kernels/aot/CMakeLists.txt",
+      "frozen_blob": "2908aae1bca1ccc2db6f696de0cb30beb24fd8ef",
+      "latest_blob": "2908aae1bca1ccc2db6f696de0cb30beb24fd8ef",
+      "unchanged": true
+    },
+    {
+      "path": "python/sglang/kernels/aot/THIRDPARTYNOTICES.txt",
+      "frozen_blob": "2a81411ae9e7987925b35477558cf3151899f66a",
+      "latest_blob": "2a81411ae9e7987925b35477558cf3151899f66a",
+      "unchanged": true
+    },
+    {
+      "path": "python/sglang/kernels/aot/benchmark/bench_gguf_mmq.py",
+      "frozen_blob": null,
+      "latest_blob": null,
+      "unchanged": true
+    },
+    {
+      "path": "python/sglang/kernels/aot/cmake/flashmla.cmake",
+      "frozen_blob": "285cc8ab605300783b4b056846105f95d53ce1d7",
+      "latest_blob": "285cc8ab605300783b4b056846105f95d53ce1d7",
+      "unchanged": true
+    },
+    {
+      "path": "python/sglang/kernels/aot/csrc/common_extension.cc",
+      "frozen_blob": "6f146de442610e501ac6d07fd1d369a0a9a217a4",
+      "latest_blob": "6f146de442610e501ac6d07fd1d369a0a9a217a4",
+      "unchanged": true
+    },
+    {
+      "path": "python/sglang/kernels/aot/csrc/quantization/gguf/gguf_kernel.cu",
+      "frozen_blob": "1a4955f517a07f36f02fef260de3dd69a04d7d74",
+      "latest_blob": "1a4955f517a07f36f02fef260de3dd69a04d7d74",
+      "unchanged": true
+    },
+    {
+      "path": "python/sglang/kernels/aot/csrc/quantization/gguf/mmq.cuh",
+      "frozen_blob": "9838c14f0118077491126425960af827fcdd66b9",
+      "latest_blob": "9838c14f0118077491126425960af827fcdd66b9",
+      "unchanged": true
+    },
+    {
+      "path": "python/sglang/kernels/aot/csrc/quantization/gguf/moe.cuh",
+      "frozen_blob": "91e434fa608091c6c94b06c65ec0843e2fd88396",
+      "latest_blob": "91e434fa608091c6c94b06c65ec0843e2fd88396",
+      "unchanged": true
+    },
+    {
+      "path": "python/sglang/kernels/aot/csrc/quantization/gguf/moe_vec.cuh",
+      "frozen_blob": "8cef9e080a22b6fddefbd53abd138ede5eaae4c4",
+      "latest_blob": "8cef9e080a22b6fddefbd53abd138ede5eaae4c4",
+      "unchanged": true
+    },
+    {
+      "path": "python/sglang/kernels/aot/csrc/quantization/gguf/vecdotq.cuh",
+      "frozen_blob": "08b4cd269c7bf5fedd2f9b225f3ef9db0d4b73be",
+      "latest_blob": "08b4cd269c7bf5fedd2f9b225f3ef9db0d4b73be",
+      "unchanged": true
+    },
+    {
+      "path": "python/sglang/kernels/aot/include/sgl_kernel_ops.h",
+      "frozen_blob": "65c274b86c1150b9090cbb6338528dbec9f0f463",
+      "latest_blob": "65c274b86c1150b9090cbb6338528dbec9f0f463",
+      "unchanged": true
+    },
+    {
+      "path": "python/sglang/kernels/aot/pyproject.toml",
+      "frozen_blob": "6a0050fd221314eb1ca6bf232c0d28bb24ee8bee",
+      "latest_blob": "6a0050fd221314eb1ca6bf232c0d28bb24ee8bee",
+      "unchanged": true
+    },
+    {
+      "path": "python/sglang/kernels/aot/python/sgl_kernel/__init__.py",
+      "frozen_blob": "2820b64997c10f943c1b38af7a20c3ca2ecba93f",
+      "latest_blob": "2820b64997c10f943c1b38af7a20c3ca2ecba93f",
+      "unchanged": true
+    },
+    {
+      "path": "python/sglang/kernels/aot/python/sgl_kernel/quantization/__init__.py",
+      "frozen_blob": "0ad12c64e4ac9e8599b992a1344c69318f4483f0",
+      "latest_blob": "0ad12c64e4ac9e8599b992a1344c69318f4483f0",
+      "unchanged": true
+    },
+    {
+      "path": "python/sglang/kernels/aot/python/sgl_kernel/quantization/gguf.py",
+      "frozen_blob": "994bc21d09ded1a50bb6194b9fab75a4eba72c1e",
+      "latest_blob": "994bc21d09ded1a50bb6194b9fab75a4eba72c1e",
+      "unchanged": true
+    },
+    {
+      "path": "python/sglang/kernels/aot/tests/test_gguf.py",
+      "frozen_blob": "2f1f0935f5d62e34fc62d75690ca83b2a859a77d",
+      "latest_blob": "2f1f0935f5d62e34fc62d75690ca83b2a859a77d",
+      "unchanged": true
+    },
+    {
+      "path": "python/sglang/kernels/jit/include/sgl_kernel/allocator.h",
+      "frozen_blob": "9b034f59a7ef754e615d23d7165fb439e97dd146",
+      "latest_blob": "9b034f59a7ef754e615d23d7165fb439e97dd146",
+      "unchanged": true
+    },
+    {
+      "path": "python/sglang/kernels/jit/include/sgl_kernel/atomic.cuh",
+      "frozen_blob": "de35bef3532ffcdd39fecf2cea02aa2e4e5f843b",
+      "latest_blob": "de35bef3532ffcdd39fecf2cea02aa2e4e5f843b",
+      "unchanged": true
+    },
+    {
+      "path": "python/sglang/kernels/jit/include/sgl_kernel/bits.h",
+      "frozen_blob": "c2d7713aaae650f250b90b8c4acc08eafa3a6987",
+      "latest_blob": "c2d7713aaae650f250b90b8c4acc08eafa3a6987",
+      "unchanged": true
+    },
+    {
+      "path": "python/sglang/kernels/jit/include/sgl_kernel/cta.cuh",
+      "frozen_blob": "d23813621f15c9471170be531ca2f16cc804f4ce",
+      "latest_blob": "d23813621f15c9471170be531ca2f16cc804f4ce",
+      "unchanged": true
+    },
+    {
+      "path": "python/sglang/kernels/jit/include/sgl_kernel/deepseek_v4/compress.cuh",
+      "frozen_blob": "944619cd71b75e2f552c3037b7ffe5810c9785f4",
+      "latest_blob": "944619cd71b75e2f552c3037b7ffe5810c9785f4",
+      "unchanged": true
+    },
+    {
+      "path": "python/sglang/kernels/jit/include/sgl_kernel/deepseek_v4/compress_v2.cuh",
+      "frozen_blob": "b742eafcd12b0106938e2bff019472369f671777",
+      "latest_blob": "b742eafcd12b0106938e2bff019472369f671777",
+      "unchanged": true
+    },
+    {
+      "path": "python/sglang/kernels/jit/include/sgl_kernel/deepseek_v4/fp4_utils.cuh",
+      "frozen_blob": "c148521811ab4102cca65d023810d09fb9e32b1b",
+      "latest_blob": "c148521811ab4102cca65d023810d09fb9e32b1b",
+      "unchanged": true
+    },
+    {
+      "path": "python/sglang/kernels/jit/include/sgl_kernel/deepseek_v4/fp8_utils.cuh",
+      "frozen_blob": "7b600211cb4190a9484fd39ad646915f4f0c740c",
+      "latest_blob": "7b600211cb4190a9484fd39ad646915f4f0c740c",
+      "unchanged": true
+    },
+    {
+      "path": "python/sglang/kernels/jit/include/sgl_kernel/deepseek_v4/kv_layout.cuh",
+      "frozen_blob": "028766b9e78598e4ddbb45800ada8ffae3a1a2ee",
+      "latest_blob": "028766b9e78598e4ddbb45800ada8ffae3a1a2ee",
+      "unchanged": true
+    },
+    {
+      "path": "python/sglang/kernels/jit/include/sgl_kernel/deepseek_v4/kvcacheio.cuh",
+      "frozen_blob": "a27fbf95e9926ce85449d363b5807680ca0df080",
+      "latest_blob": "a27fbf95e9926ce85449d363b5807680ca0df080",
+      "unchanged": true
+    },
+    {
+      "path": "python/sglang/kernels/jit/include/sgl_kernel/deepseek_v4/topk_impl.cuh",
+      "frozen_blob": "b0b2088540974d576480dc3db2ecbe9cacab9485",
+      "latest_blob": "b0b2088540974d576480dc3db2ecbe9cacab9485",
+      "unchanged": true
+    },
+    {
+      "path": "python/sglang/kernels/jit/include/sgl_kernel/distributed/communicator.cuh",
+      "frozen_blob": "411e0c3c26e2adadf5a07d2ca2ccdc9407e07d8e",
+      "latest_blob": "411e0c3c26e2adadf5a07d2ca2ccdc9407e07d8e",
+      "unchanged": true
+    },
+    {
+      "path": "python/sglang/kernels/jit/include/sgl_kernel/distributed/ptx.cuh",
+      "frozen_blob": "ae232abb502a0b7e30d36204cbb99b44a12a063a",
+      "latest_blob": "ae232abb502a0b7e30d36204cbb99b44a12a063a",
+      "unchanged": true
+    },
+    {
+      "path": "python/sglang/kernels/jit/include/sgl_kernel/ffi.h",
+      "frozen_blob": "97c17805de14cb158008f0d2725d4b01f27f2fe5",
+      "latest_blob": "97c17805de14cb158008f0d2725d4b01f27f2fe5",
+      "unchanged": true
+    },
+    {
+      "path": "python/sglang/kernels/jit/include/sgl_kernel/gemm/dot_product.cuh",
+      "frozen_blob": "140980cdb9343fbc3e3970bcc8dca345e4e0706e",
+      "latest_blob": "140980cdb9343fbc3e3970bcc8dca345e4e0706e",
+      "unchanged": true
+    },
+    {
+      "path": "python/sglang/kernels/jit/include/sgl_kernel/impl/norm.cuh",
+      "frozen_blob": "e3cf09201cfdd2fe5d7ba206c4cf62e0ad47e25d",
+      "latest_blob": "e3cf09201cfdd2fe5d7ba206c4cf62e0ad47e25d",
+      "unchanged": true
+    },
+    {
+      "path": "python/sglang/kernels/jit/include/sgl_kernel/math.cuh",
+      "frozen_blob": "cb8d381b94845a9132d6f49f0f00cfded8c87369",
+      "latest_blob": "cb8d381b94845a9132d6f49f0f00cfded8c87369",
+      "unchanged": true
+    },
+    {
+      "path": "python/sglang/kernels/jit/include/sgl_kernel/mbarrier.cuh",
+      "frozen_blob": "4bc4615d5ac8c9c4d6445d36440fb76214531887",
+      "latest_blob": "4bc4615d5ac8c9c4d6445d36440fb76214531887",
+      "unchanged": true
+    },
+    {
+      "path": "python/sglang/kernels/jit/include/sgl_kernel/runtime.cuh",
+      "frozen_blob": "44e61ee505f4b58a316eb4321566a07b28337811",
+      "latest_blob": "44e61ee505f4b58a316eb4321566a07b28337811",
+      "unchanged": true
+    },
+    {
+      "path": "python/sglang/kernels/jit/include/sgl_kernel/scalar_type.hpp",
+      "frozen_blob": "e78a34b35a819a379f161da0a788251fee77db77",
+      "latest_blob": "e78a34b35a819a379f161da0a788251fee77db77",
+      "unchanged": true
+    },
+    {
+      "path": "python/sglang/kernels/jit/include/sgl_kernel/source_location.h",
+      "frozen_blob": "d8c70c4420773a7a37d692870a68f9d431ec7b21",
+      "latest_blob": "d8c70c4420773a7a37d692870a68f9d431ec7b21",
+      "unchanged": true
+    },
+    {
+      "path": "python/sglang/kernels/jit/include/sgl_kernel/speculative/eagle.cuh",
+      "frozen_blob": "83c41a47da5ea733885c7a4bedc56e008950a95a",
+      "latest_blob": "83c41a47da5ea733885c7a4bedc56e008950a95a",
+      "unchanged": true
+    },
+    {
+      "path": "python/sglang/kernels/jit/include/sgl_kernel/speculative/ngram.cuh",
+      "frozen_blob": "08e1b386d31dd902d4ab7ddd15b0cc081a0df2b4",
+      "latest_blob": "08e1b386d31dd902d4ab7ddd15b0cc081a0df2b4",
+      "unchanged": true
+    },
+    {
+      "path": "python/sglang/kernels/jit/include/sgl_kernel/speculative/sampling.cuh",
+      "frozen_blob": "ac46f636bcb545cdab4422274463901956f75113",
+      "latest_blob": "ac46f636bcb545cdab4422274463901956f75113",
+      "unchanged": true
+    },
+    {
+      "path": "python/sglang/kernels/jit/include/sgl_kernel/tensor.h",
+      "frozen_blob": "196a00a556668427dbeed345fc5c0df7028d27fc",
+      "latest_blob": "196a00a556668427dbeed345fc5c0df7028d27fc",
+      "unchanged": true
+    },
+    {
+      "path": "python/sglang/kernels/jit/include/sgl_kernel/tile.cuh",
+      "frozen_blob": "332e167c11701e61890872a639b7258250a41c35",
+      "latest_blob": "332e167c11701e61890872a639b7258250a41c35",
+      "unchanged": true
+    },
+    {
+      "path": "python/sglang/kernels/jit/include/sgl_kernel/type.cuh",
+      "frozen_blob": "db9a90f02137f3d3675114d2dcadfdf6e62c143b",
+      "latest_blob": "db9a90f02137f3d3675114d2dcadfdf6e62c143b",
+      "unchanged": true
+    },
+    {
+      "path": "python/sglang/kernels/jit/include/sgl_kernel/utils.cuh",
+      "frozen_blob": "fa724a99385a73f0b553f1a461427b45bb87c0f7",
+      "latest_blob": "fa724a99385a73f0b553f1a461427b45bb87c0f7",
+      "unchanged": true
+    },
+    {
+      "path": "python/sglang/kernels/jit/include/sgl_kernel/utils.h",
+      "frozen_blob": "9c7f29ddcef719ede6f6c3e3d6e4587d738fff9b",
+      "latest_blob": "9c7f29ddcef719ede6f6c3e3d6e4587d738fff9b",
+      "unchanged": true
+    },
+    {
+      "path": "python/sglang/kernels/jit/include/sgl_kernel/vec.cuh",
+      "frozen_blob": "ca8e36e88d7263ebf6ba2d8b588c8cbcccf523a2",
+      "latest_blob": "ca8e36e88d7263ebf6ba2d8b588c8cbcccf523a2",
+      "unchanged": true
+    },
+    {
+      "path": "python/sglang/kernels/jit/include/sgl_kernel/warp.cuh",
+      "frozen_blob": "f1a53d78d17741b776e923dfeb4103472ba2c2a0",
+      "latest_blob": "f1a53d78d17741b776e923dfeb4103472ba2c2a0",
+      "unchanged": true
+    },
+    {
+      "path": "python/sglang/kernels/jit/utils/__init__.py",
+      "frozen_blob": "0e52be9226de6a6d2dc025a7eb36924b2d34a9ee",
+      "latest_blob": "0e52be9226de6a6d2dc025a7eb36924b2d34a9ee",
+      "unchanged": true
+    },
+    {
+      "path": "python/sglang/kernels/jit/utils/arch.py",
+      "frozen_blob": "7091d1790b9a53856db83d51df50a7642e58e4b9",
+      "latest_blob": "7091d1790b9a53856db83d51df50a7642e58e4b9",
+      "unchanged": true
+    },
+    {
+      "path": "python/sglang/kernels/jit/utils/common.py",
+      "frozen_blob": "dc34560560c90bd8d1c46f2676015abb6c77486f",
+      "latest_blob": "dc34560560c90bd8d1c46f2676015abb6c77486f",
+      "unchanged": true
+    },
+    {
+      "path": "python/sglang/kernels/jit/utils/compile/__init__.py",
+      "frozen_blob": "fe757b59045838134864ddd1bfc3959fba435cdd",
+      "latest_blob": "fe757b59045838134864ddd1bfc3959fba435cdd",
+      "unchanged": true
+    },
+    {
+      "path": "python/sglang/kernels/jit/utils/compile/cache.py",
+      "frozen_blob": "deba51e4c3a88933adda5aa799a30f22f2551b51",
+      "latest_blob": "deba51e4c3a88933adda5aa799a30f22f2551b51",
+      "unchanged": true
+    },
+    {
+      "path": "python/sglang/kernels/jit/utils/compile/cpp_args.py",
+      "frozen_blob": "584d2c866c040d2ad423638cb8525cf82f377d48",
+      "latest_blob": "584d2c866c040d2ad423638cb8525cf82f377d48",
+      "unchanged": true
+    },
+    {
+      "path": "python/sglang/kernels/jit/utils/compile/loader.py",
+      "frozen_blob": "7dffa00b474b469fa351c3afb599f4e64066b835",
+      "latest_blob": "7dffa00b474b469fa351c3afb599f4e64066b835",
+      "unchanged": true
+    },
+    {
+      "path": "python/sglang/kernels/jit/utils/compile/ninja.py",
+      "frozen_blob": "a54b5bc01065cdf425971f7bd341dd1fb62dbc88",
+      "latest_blob": "a54b5bc01065cdf425971f7bd341dd1fb62dbc88",
+      "unchanged": true
+    },
+    {
+      "path": "python/sglang/kernels/jit/utils/compile/paths.py",
+      "frozen_blob": "6e4caf221547aa2d851937983842602eef59f705",
+      "latest_blob": "6e4caf221547aa2d851937983842602eef59f705",
+      "unchanged": true
+    },
+    {
+      "path": "python/sglang/kernels/jit/utils/compile/spec.py",
+      "frozen_blob": "c435dea90719a954d5a5d2ceb36bda3020572e67",
+      "latest_blob": "c435dea90719a954d5a5d2ceb36bda3020572e67",
+      "unchanged": true
+    },
+    {
+      "path": "python/sglang/kernels/jit/utils/compile/toolchain.py",
+      "frozen_blob": "5c8752aa0bd05af194a71403bf61b8f55690909b",
+      "latest_blob": "5c8752aa0bd05af194a71403bf61b8f55690909b",
+      "unchanged": true
+    },
+    {
+      "path": "python/sglang/kernels/jit/utils/deps.py",
+      "frozen_blob": "93c13cd5f701dc1b9361ed729360bc96f7919c5a",
+      "latest_blob": "93c13cd5f701dc1b9361ed729360bc96f7919c5a",
+      "unchanged": true
+    },
+    {
+      "path": "python/sglang/kernels/jit/utils/occupancy.py",
+      "frozen_blob": "0e01f688a793885bd0c9194051056314aed0edd4",
+      "latest_blob": "0e01f688a793885bd0c9194051056314aed0edd4",
+      "unchanged": true
+    },
+    {
+      "path": "python/sglang/kernels/ops/activation/__init__.py",
+      "frozen_blob": "14359b322ae7de7fd23309570a258a4bdc5a2c65",
+      "latest_blob": "14359b322ae7de7fd23309570a258a4bdc5a2c65",
+      "unchanged": true
+    },
+    {
+      "path": "python/sglang/kernels/ops/activation/_jit_situ_and_mul.py",
+      "frozen_blob": "8b9c99a71056acb6b5cb7e07776cec40a1ab82f2",
+      "latest_blob": "8b9c99a71056acb6b5cb7e07776cec40a1ab82f2",
+      "unchanged": true
+    },
+    {
+      "path": "python/sglang/kernels/ops/activation/activation.py",
+      "frozen_blob": "4ee278ce0719ada3e45d7d97649ec6e9d8557b96",
+      "latest_blob": "4ee278ce0719ada3e45d7d97649ec6e9d8557b96",
+      "unchanged": true
+    },
+    {
+      "path": "python/sglang/kernels/ops/activation/silu_and_mul_clamp_hip.py",
+      "frozen_blob": "a4c7a3b0bc017402788717f5653e2f618d5d378e",
+      "latest_blob": "a4c7a3b0bc017402788717f5653e2f618d5d378e",
+      "unchanged": true
+    },
+    {
+      "path": "python/sglang/kernels/ops/activation/softcap.py",
+      "frozen_blob": "317dfed36cb60192aa92c1f49ca81bb85d695ad6",
+      "latest_blob": "317dfed36cb60192aa92c1f49ca81bb85d695ad6",
+      "unchanged": true
+    },
+    {
+      "path": "python/sglang/srt/layers/quantization/gguf.py",
+      "frozen_blob": "1d8b4ba3b8226a506cea8b4d31c0639fe2e8fba6",
+      "latest_blob": "1d8b4ba3b8226a506cea8b4d31c0639fe2e8fba6",
+      "unchanged": true
+    },
+    {
+      "path": "test/registered/unit/layers/quantization/test_gguf_mmq_types.py",
+      "frozen_blob": null,
+      "latest_blob": null,
+      "unchanged": true
+    }
+  ],
+  "upstream_commits": [
+    "27b68303d fix(openai): omit absent tool_calls from chat responses (#43027)",
+    "8e37c6cf3 [CI] Run test_pi05_modelopt_fp8_cuda in the kernel-unit lane (#44055)",
+    "5100f8d11 [DSA] Q8KV8 FP8 Sparse Prefill on GLM-5.3-Flash with BF16 KV Cache (#41790)",
+    "29974d543 [NPU] [DOC] update kimi k3 cookbook and supported features on NPU (#44052)",
+    "74e0a4786 Fix/compressed tensors nvfp4 hopper (#40022)",
+    "5727f0893 [diffusion] feat: add configurable reference image resizing for MiniMax H3 Ref2VA (#35839)",
+    "85254b5a8 [diffusion] comfyui: run Qwen-Image 2.1 in SGLD integrated mode (#43581)",
+    "991a29d0a fix(multimodal): convert grayscale tensors to RGB in PIL backend (#42127)",
+    "4b5b72714 Fix EVS for NemotronH_Omni_Reasoning_V3 (#42933)",
+    "aa15b06ab [AMD][CI] Run test_tracing.py in the extra tier, matching CUDA (#43928)",
+    "4e0fa5253 [Perf] Compact GDN causal-conv grids for skewed prefill batches (#43570)",
+    "01f684069 [FlashInfer] Add startup autotuning for MegaMoE (#43789)",
+    "195cb7afb [CI] Use sgl-eval for GLM-5.3-Flash GSM8K tests (#43975)",
+    "e0c957e22 [HiCache][PD] Allow DSA index-K elision under HiCache and disaggregation (#41769)",
+    "27be99ae7 [NVIDIA][MegaMoE] Fix the default spec decoding moe backend when the target model uses flashinfer megamoe (#40772)"
+  ],
+  "status": ""
+}

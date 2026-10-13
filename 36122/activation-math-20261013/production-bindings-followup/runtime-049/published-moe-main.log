@@ -1,0 +1,102 @@
+/probe/runtime-049/probe-site/torch/cuda/__init__.py:68: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/usr/local/lib/python3.12/dist-packages/torchao/quantization/quant_api.py:1731: SyntaxWarning: invalid escape sequence '\.'
+  """Configuration class for applying different quantization configs to modules or parameters based on their fully qualified names (FQNs).
+{"kind": "provenance", "role": "main", "source_sha": "7ff3a112846a3fcc12a27bba09d644885a226e4d", "source_tree": "b2d0fd3b705915311a42f7dcf7cff9b6957faecf", "gguf_source": "/src/python/sglang/srt/layers/quantization/gguf.py", "kernel_python": "/probe/runtime-049/probe-site/sgl_kernel/__init__.py", "common_ops": "/probe/runtime-049/probe-site/sgl_kernel/sm100/common_ops.abi3.so", "common_ops_sha256": "8b5ee02f8eb7c807e8b8051963e4a88f6d7174a72960bc5f2e3d9905c21456bf", "wheel_sha256": "384a0d2158740f5ab42cfc64c872640bb3c80f3b0ec3b4666bc3efb553254bc4", "torch": "2.14.1+cu130", "cuda": "13.0", "kernel_version": "0.4.9", "activation_flags": ["--use_fast_math"], "capability": false, "namespace": "sgl_kernel (unmodified official wheel)", "gpu": "NVIDIA GB10"}
+USDT:2026-10-13 20:59:51 6:6 SyncActivityProfilerHandler.cpp:39] profiler_start
+USDT:2026-10-13 20:59:55 6:6 SyncActivityProfilerHandler.cpp:46] profiler_stop
+{"role": "main", "case": "IQ1_S_torch.float16_silu", "status": "PASS", "events": {"sgl_kernel::ggml_moe_a8_vec": 2, "sglang::_run_activation_inplace": 1}, "max_abs": 0.002109527587890625}
+USDT:2026-10-13 20:59:56 6:6 SyncActivityProfilerHandler.cpp:39] profiler_start
+USDT:2026-10-13 20:59:56 6:6 SyncActivityProfilerHandler.cpp:46] profiler_stop
+{"role": "main", "case": "IQ1_S_torch.float16_gelu", "status": "PASS", "events": {"sgl_kernel::ggml_moe_a8_vec": 2, "sglang::_run_activation_inplace": 1}, "max_abs": 0.00186920166015625}
+USDT:2026-10-13 20:59:56 6:6 SyncActivityProfilerHandler.cpp:39] profiler_start
+USDT:2026-10-13 21:00:00 6:6 SyncActivityProfilerHandler.cpp:46] profiler_stop
+{"role": "main", "case": "IQ1_S_torch.bfloat16_silu", "status": "PASS", "events": {"sgl_kernel::ggml_moe_a8_vec": 2, "sglang::_run_activation_inplace": 1}, "max_abs": 0.0018310546875}
+USDT:2026-10-13 21:00:01 6:6 SyncActivityProfilerHandler.cpp:39] profiler_start
+USDT:2026-10-13 21:00:01 6:6 SyncActivityProfilerHandler.cpp:46] profiler_stop
+{"role": "main", "case": "IQ1_S_torch.bfloat16_gelu", "status": "PASS", "events": {"sgl_kernel::ggml_moe_a8_vec": 2, "sglang::_run_activation_inplace": 1}, "max_abs": 0.0015869140625}
+USDT:2026-10-13 21:00:01 6:6 SyncActivityProfilerHandler.cpp:39] profiler_start
+USDT:2026-10-13 21:00:01 6:6 SyncActivityProfilerHandler.cpp:46] profiler_stop
+{"role": "main", "case": "IQ2_XXS_torch.float16_silu", "status": "PASS", "events": {"sgl_kernel::ggml_moe_a8_vec": 2, "sglang::_run_activation_inplace": 1}, "max_abs": 0.0007171630859375}
+USDT:2026-10-13 21:00:01 6:6 SyncActivityProfilerHandler.cpp:39] profiler_start
+USDT:2026-10-13 21:00:01 6:6 SyncActivityProfilerHandler.cpp:46] profiler_stop
+{"role": "main", "case": "IQ2_XXS_torch.float16_gelu", "status": "PASS", "events": {"sgl_kernel::ggml_moe_a8_vec": 2, "sglang::_run_activation_inplace": 1}, "max_abs": 0.001132965087890625}
+USDT:2026-10-13 21:00:01 6:6 SyncActivityProfilerHandler.cpp:39] profiler_start
+USDT:2026-10-13 21:00:01 6:6 SyncActivityProfilerHandler.cpp:46] profiler_stop
+{"role": "main", "case": "IQ2_XXS_torch.bfloat16_silu", "status": "PASS", "events": {"sgl_kernel::ggml_moe_a8_vec": 2, "sglang::_run_activation_inplace": 1}, "max_abs": 0.0008544921875}
+USDT:2026-10-13 21:00:01 6:6 SyncActivityProfilerHandler.cpp:39] profiler_start
+USDT:2026-10-13 21:00:01 6:6 SyncActivityProfilerHandler.cpp:46] profiler_stop
+{"role": "main", "case": "IQ2_XXS_torch.bfloat16_gelu", "status": "PASS", "events": {"sgl_kernel::ggml_moe_a8_vec": 2, "sglang::_run_activation_inplace": 1}, "max_abs": 0.0009765625}
+USDT:2026-10-13 21:00:01 6:6 SyncActivityProfilerHandler.cpp:39] profiler_start
+USDT:2026-10-13 21:00:01 6:6 SyncActivityProfilerHandler.cpp:46] profiler_stop
+{"role": "main", "case": "IQ2_XS_torch.float16_silu", "status": "PASS", "events": {"sgl_kernel::ggml_moe_a8_vec": 2, "sglang::_run_activation_inplace": 1}, "max_abs": 0.000732421875}
+USDT:2026-10-13 21:00:01 6:6 SyncActivityProfilerHandler.cpp:39] profiler_start
+USDT:2026-10-13 21:00:01 6:6 SyncActivityProfilerHandler.cpp:46] profiler_stop
+{"role": "main", "case": "IQ2_XS_torch.float16_gelu", "status": "PASS", "events": {"sgl_kernel::ggml_moe_a8_vec": 2, "sglang::_run_activation_inplace": 1}, "max_abs": 0.000732421875}
+USDT:2026-10-13 21:00:01 6:6 SyncActivityProfilerHandler.cpp:39] profiler_start
+USDT:2026-10-13 21:00:01 6:6 SyncActivityProfilerHandler.cpp:46] profiler_stop
+{"role": "main", "case": "IQ2_XS_torch.bfloat16_silu", "status": "PASS", "events": {"sgl_kernel::ggml_moe_a8_vec": 2, "sglang::_run_activation_inplace": 1}, "max_abs": 0.0008544921875}
+USDT:2026-10-13 21:00:01 6:6 SyncActivityProfilerHandler.cpp:39] profiler_start
+USDT:2026-10-13 21:00:01 6:6 SyncActivityProfilerHandler.cpp:46] profiler_stop
+{"role": "main", "case": "IQ2_XS_torch.bfloat16_gelu", "status": "PASS", "events": {"sgl_kernel::ggml_moe_a8_vec": 2, "sglang::_run_activation_inplace": 1}, "max_abs": 0.000885009765625}
+USDT:2026-10-13 21:00:01 6:6 SyncActivityProfilerHandler.cpp:39] profiler_start
+USDT:2026-10-13 21:00:01 6:6 SyncActivityProfilerHandler.cpp:46] profiler_stop
+{"role": "main", "case": "IQ2_S_torch.float16_silu", "status": "PASS", "events": {"sgl_kernel::ggml_moe_a8_vec": 2, "sglang::_run_activation_inplace": 1}, "max_abs": 0.0007386207580566406}
+USDT:2026-10-13 21:00:01 6:6 SyncActivityProfilerHandler.cpp:39] profiler_start
+USDT:2026-10-13 21:00:01 6:6 SyncActivityProfilerHandler.cpp:46] profiler_stop
+{"role": "main", "case": "IQ2_S_torch.float16_gelu", "status": "PASS", "events": {"sgl_kernel::ggml_moe_a8_vec": 2, "sglang::_run_activation_inplace": 1}, "max_abs": 0.000762939453125}
+USDT:2026-10-13 21:00:01 6:6 SyncActivityProfilerHandler.cpp:39] profiler_start
+USDT:2026-10-13 21:00:01 6:6 SyncActivityProfilerHandler.cpp:46] profiler_stop
+USDT:2026-10-13 21:00:01 6:6 SyncActivityProfilerHandler.cpp:39] profiler_start
+{"role": "main", "case": "IQ2_S_torch.bfloat16_silu", "status": "PASS", "events": {"sgl_kernel::ggml_moe_a8_vec": 2, "sglang::_run_activation_inplace": 1}, "max_abs": 0.00079345703125}
+USDT:2026-10-13 21:00:01 6:6 SyncActivityProfilerHandler.cpp:46] profiler_stop
+{"role": "main", "case": "IQ2_S_torch.bfloat16_gelu", "status": "PASS", "events": {"sgl_kernel::ggml_moe_a8_vec": 2, "sglang::_run_activation_inplace": 1}, "max_abs": 0.00091552734375}
+USDT:2026-10-13 21:00:01 6:6 SyncActivityProfilerHandler.cpp:39] profiler_start
+USDT:2026-10-13 21:00:01 6:6 SyncActivityProfilerHandler.cpp:46] profiler_stop
+{"role": "main", "case": "IQ3_XXS_torch.float16_silu", "status": "PASS", "events": {"sgl_kernel::ggml_moe_a8_vec": 2, "sglang::_run_activation_inplace": 1}, "max_abs": 0.00074005126953125}
+USDT:2026-10-13 21:00:01 6:6 SyncActivityProfilerHandler.cpp:39] profiler_start
+USDT:2026-10-13 21:00:01 6:6 SyncActivityProfilerHandler.cpp:46] profiler_stop
+{"role": "main", "case": "IQ3_XXS_torch.float16_gelu", "status": "PASS", "events": {"sgl_kernel::ggml_moe_a8_vec": 2, "sglang::_run_activation_inplace": 1}, "max_abs": 0.001129150390625}
+USDT:2026-10-13 21:00:01 6:6 SyncActivityProfilerHandler.cpp:39] profiler_start
+USDT:2026-10-13 21:00:01 6:6 SyncActivityProfilerHandler.cpp:46] profiler_stop
+{"role": "main", "case": "IQ3_XXS_torch.bfloat16_silu", "status": "PASS", "events": {"sgl_kernel::ggml_moe_a8_vec": 2, "sglang::_run_activation_inplace": 1}, "max_abs": 0.0009765625}
+USDT:2026-10-13 21:00:01 6:6 SyncActivityProfilerHandler.cpp:39] profiler_start
+USDT:2026-10-13 21:00:01 6:6 SyncActivityProfilerHandler.cpp:46] profiler_stop
+{"role": "main", "case": "IQ3_XXS_torch.bfloat16_gelu", "status": "PASS", "events": {"sgl_kernel::ggml_moe_a8_vec": 2, "sglang::_run_activation_inplace": 1}, "max_abs": 0.00146484375}
+USDT:2026-10-13 21:00:01 6:6 SyncActivityProfilerHandler.cpp:39] profiler_start
+USDT:2026-10-13 21:00:01 6:6 SyncActivityProfilerHandler.cpp:46] profiler_stop
+{"role": "main", "case": "IQ3_S_torch.float16_silu", "status": "PASS", "events": {"sgl_kernel::ggml_moe_a8_vec": 2, "sglang::_run_activation_inplace": 1}, "max_abs": 0.003173828125}
+USDT:2026-10-13 21:00:01 6:6 SyncActivityProfilerHandler.cpp:39] profiler_start
+USDT:2026-10-13 21:00:01 6:6 SyncActivityProfilerHandler.cpp:46] profiler_stop
+{"role": "main", "case": "IQ3_S_torch.float16_gelu", "status": "PASS", "events": {"sgl_kernel::ggml_moe_a8_vec": 2, "sglang::_run_activation_inplace": 1}, "max_abs": 0.003662109375}
+USDT:2026-10-13 21:00:01 6:6 SyncActivityProfilerHandler.cpp:39] profiler_start
+USDT:2026-10-13 21:00:01 6:6 SyncActivityProfilerHandler.cpp:46] profiler_stop
+{"role": "main", "case": "IQ3_S_torch.bfloat16_silu", "status": "PASS", "events": {"sgl_kernel::ggml_moe_a8_vec": 2, "sglang::_run_activation_inplace": 1}, "max_abs": 0.003173828125}
+USDT:2026-10-13 21:00:01 6:6 SyncActivityProfilerHandler.cpp:39] profiler_start
+USDT:2026-10-13 21:00:01 6:6 SyncActivityProfilerHandler.cpp:46] profiler_stop
+{"role": "main", "case": "IQ3_S_torch.bfloat16_gelu", "status": "PASS", "events": {"sgl_kernel::ggml_moe_a8_vec": 2, "sglang::_run_activation_inplace": 1}, "max_abs": 0.00341796875}
+USDT:2026-10-13 21:00:01 6:6 SyncActivityProfilerHandler.cpp:39] profiler_start
+USDT:2026-10-13 21:00:01 6:6 SyncActivityProfilerHandler.cpp:46] profiler_stop
+{"role": "main", "case": "IQ4_NL_torch.float16_silu", "status": "PASS", "events": {"sgl_kernel::ggml_moe_a8_vec": 2, "sglang::_run_activation_inplace": 1}, "max_abs": 0.00070953369140625}
+USDT:2026-10-13 21:00:01 6:6 SyncActivityProfilerHandler.cpp:39] profiler_start
+USDT:2026-10-13 21:00:01 6:6 SyncActivityProfilerHandler.cpp:46] profiler_stop
+{"role": "main", "case": "IQ4_NL_torch.float16_gelu", "status": "PASS", "events": {"sgl_kernel::ggml_moe_a8_vec": 2, "sglang::_run_activation_inplace": 1}, "max_abs": 0.0008087158203125}
+USDT:2026-10-13 21:00:01 6:6 SyncActivityProfilerHandler.cpp:39] profiler_start
+USDT:2026-10-13 21:00:01 6:6 SyncActivityProfilerHandler.cpp:46] profiler_stop
+{"role": "main", "case": "IQ4_NL_torch.bfloat16_silu", "status": "PASS", "events": {"sgl_kernel::ggml_moe_a8_vec": 2, "sglang::_run_activation_inplace": 1}, "max_abs": 0.000732421875}
+USDT:2026-10-13 21:00:01 6:6 SyncActivityProfilerHandler.cpp:39] profiler_start
+USDT:2026-10-13 21:00:01 6:6 SyncActivityProfilerHandler.cpp:46] profiler_stop
+{"role": "main", "case": "IQ4_NL_torch.bfloat16_gelu", "status": "PASS", "events": {"sgl_kernel::ggml_moe_a8_vec": 2, "sglang::_run_activation_inplace": 1}, "max_abs": 0.0008544921875}
+USDT:2026-10-13 21:00:01 6:6 SyncActivityProfilerHandler.cpp:39] profiler_start
+USDT:2026-10-13 21:00:01 6:6 SyncActivityProfilerHandler.cpp:46] profiler_stop
+{"role": "main", "case": "IQ4_XS_torch.float16_silu", "status": "PASS", "events": {"sgl_kernel::ggml_moe_a8_vec": 2, "sglang::_run_activation_inplace": 1}, "max_abs": 0.000732421875}
+USDT:2026-10-13 21:00:01 6:6 SyncActivityProfilerHandler.cpp:39] profiler_start
+USDT:2026-10-13 21:00:01 6:6 SyncActivityProfilerHandler.cpp:46] profiler_stop
+{"role": "main", "case": "IQ4_XS_torch.float16_gelu", "status": "PASS", "events": {"sgl_kernel::ggml_moe_a8_vec": 2, "sglang::_run_activation_inplace": 1}, "max_abs": 0.00067138671875}
+USDT:2026-10-13 21:00:01 6:6 SyncActivityProfilerHandler.cpp:39] profiler_start
+USDT:2026-10-13 21:00:01 6:6 SyncActivityProfilerHandler.cpp:46] profiler_stop
+{"role": "main", "case": "IQ4_XS_torch.bfloat16_silu", "status": "PASS", "events": {"sgl_kernel::ggml_moe_a8_vec": 2, "sglang::_run_activation_inplace": 1}, "max_abs": 0.00103759765625}
+USDT:2026-10-13 21:00:01 6:6 SyncActivityProfilerHandler.cpp:39] profiler_start
+USDT:2026-10-13 21:00:01 6:6 SyncActivityProfilerHandler.cpp:46] profiler_stop
+{"role": "main", "case": "IQ4_XS_torch.bfloat16_gelu", "status": "PASS", "events": {"sgl_kernel::ggml_moe_a8_vec": 2, "sglang::_run_activation_inplace": 1}, "max_abs": 0.00079345703125}
+{"kind": "result", "status": "PASS", "cases": 32, "peak_reserved": 127926272}

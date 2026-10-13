@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "main_sha": "27b68303d043ddbddf9861c55c26bc8617ea7c35",
+  "main_mmq_type_set": "STANDARD_QUANT_TYPES | KQUANT_TYPES",
+  "main_has_iq_mmq_capability": false,
+  "iq_formats": [
+    "IQ1_S",
+    "IQ2_XXS",
+    "IQ2_XS",
+    "IQ2_S",
+    "IQ3_XXS",
+    "IQ3_S",
+    "IQ4_NL",
+    "IQ4_XS"
+  ],
+  "source_blobs": {
+    "srt": "1d8b4ba3b8226a506cea8b4d31c0639fe2e8fba6",
+    "cuda": "1a4955f517a07f36f02fef260de3dd69a04d7d74",
+    "mmq": "9838c14f0118077491126425960af827fcdd66b9",
+    "moe": "91e434fa608091c6c94b06c65ec0843e2fd88396"
+  },
+  "runtime_evidence": "published-moe-summary.json: capability=false; actual vector operator twice per case",
+  "interpretation": "main and official 0.4.9 still lack the proposed IQ-MMQ capability; current numeric compatibility is not new performance evidence"
+}

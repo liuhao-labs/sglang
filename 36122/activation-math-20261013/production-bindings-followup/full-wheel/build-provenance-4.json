@@ -1,0 +1,98 @@
+{
+  "torch": "2.14.1+cu130",
+  "cuda": "13.0",
+  "torch_path": "/probe/runtime-049/probe-site/torch/__init__.py",
+  "torch_cxx11_abi": true,
+  "packages": {
+    "scikit-build-core": "1.0.3",
+    "cmake": "3.31.10",
+    "ninja": "1.13.0",
+    "wheel": "0.47.0"
+  },
+  "command": [
+    "python3",
+    "-m",
+    "pip",
+    "wheel",
+    "--no-index",
+    "--no-deps",
+    "--no-build-isolation",
+    "-v",
+    "-w",
+    "/probe/full-wheel/dist",
+    "--config-settings",
+    "build-dir=/probe/full-wheel/build-clean",
+    "/probe/full-wheel/source"
+  ],
+  "cmake_args": [
+    "-DSGL_KERNEL_COMPILE_THREADS=1",
+    "-DENABLE_CCACHE=OFF",
+    "-DCMAKE_EXPORT_COMPILE_COMMANDS=ON",
+    "-DTorch_DIR=/probe/runtime-049/probe-site/torch/share/cmake/Torch",
+    "-DCaffe2_DIR=/probe/runtime-049/probe-site/torch/share/cmake/Caffe2",
+    "-DFETCHCONTENT_SOURCE_DIR_REPO-CUTLASS=/probe/full-wheel/deps/repo-cutlass",
+    "-DFETCHCONTENT_SOURCE_DIR_REPO-FMT=/probe/full-wheel/deps/repo-fmt",
+    "-DFETCHCONTENT_SOURCE_DIR_REPO-TRITON=/probe/full-wheel/deps/repo-triton",
+    "-DFETCHCONTENT_SOURCE_DIR_REPO-FLASHINFER=/probe/full-wheel/deps/repo-flashinfer",
+    "-DFETCHCONTENT_SOURCE_DIR_REPO-FLASH-ATTENTION=/probe/full-wheel/deps/repo-flash-attention",
+    "-DFETCHCONTENT_SOURCE_DIR_REPO-FLASHMLA=/probe/full-wheel/deps/repo-flashmla",
+    "-DFETCHCONTENT_SOURCE_DIR_REPO-FLASHMLA-CUTLASS=/probe/full-wheel/deps/repo-flashmla/csrc/cutlass"
+  ],
+  "source": {
+    "integration_sha": "15d569117ce2d059ed2a3203ed53701063ace606",
+    "integration_tree": "36909c6658f0ce1ed346db5b85a3568325b9357d",
+    "aot_tree": "bbb2a30ede10936904ec0fd1d2d4922b1b810016",
+    "dependencies": [
+      {
+        "name": "repo-cutlass",
+        "url": "https://github.com/NVIDIA/cutlass/archive/57e3cfb47a2d9e0d46eb6335c3dc411498efa198.tar.gz",
+        "sha256": "09237099a70f80bff1dc8bb80c843a674bb4fdcb46e43cc6993e711c5ca89bb5",
+        "size": 33357099,
+        "container_path": "/probe/full-wheel/deps/repo-cutlass"
+      },
+      {
+        "name": "repo-fmt",
+        "url": "https://github.com/fmtlib/fmt/archive/553ec11ec06fbe0beebfbb45f9dc3c9eabd83d28.tar.gz",
+        "sha256": "c314292789d28c3c3b420e75a7b2d1706f685f7fb63289128d46aeaea2c6be71",
+        "size": 707710,
+        "container_path": "/probe/full-wheel/deps/repo-fmt"
+      },
+      {
+        "name": "repo-triton",
+        "url": "https://github.com/triton-lang/triton/archive/v3.8.0.tar.gz",
+        "sha256": "d50981f98bf61a5ce21d2a0c6ac067c20b7f741acf3bee4b8370edc3b63fd337",
+        "size": 7706928,
+        "container_path": "/probe/full-wheel/deps/repo-triton"
+      },
+      {
+        "name": "repo-flashinfer",
+        "url": "https://github.com/flashinfer-ai/flashinfer/archive/bc29697ba20b7e6bdb728ded98f04788e16ee021.tar.gz",
+        "sha256": "931dfd118f4b6de8c7d98702153c7c03840139170af21a07607693bd9749744d",
+        "size": 1649053,
+        "container_path": "/probe/full-wheel/deps/repo-flashinfer"
+      },
+      {
+        "name": "repo-flash-attention",
+        "url": "https://github.com/sgl-project/sgl-attn/archive/f89bc2306632d1ec5f97b014dded4254f5b4a907.tar.gz",
+        "sha256": "418b5681584dc3efff496a1cab5ffd58d2728d89dcfe0ea16e6985d6ef35c68c",
+        "size": 6162891,
+        "container_path": "/probe/full-wheel/deps/repo-flash-attention"
+      },
+      {
+        "name": "repo-flashmla",
+        "url": "https://github.com/sgl-project/FlashMLA/archive/3620b63fc4ebe33950c50e1b7701b6607f44150e.tar.gz",
+        "sha256": "7d7f9819bc1b121ef8226281de7265cd97be0cbe15d6450575fc8e3f241041a2",
+        "size": 322769,
+        "container_path": "/probe/full-wheel/deps/repo-flashmla"
+      },
+      {
+        "name": "repo-flashmla-cutlass",
+        "url": "https://github.com/NVIDIA/cutlass/archive/147f5673d0c1c3dcf66f78d677fd647e4a020219.tar.gz",
+        "sha256": "9f6c53320a85b4a570975e557918cde65168cd311f081920446c238437347dc6",
+        "size": 34013493,
+        "container_path": "/probe/full-wheel/deps/repo-flashmla/csrc/cutlass"
+      }
+    ]
+  },
+  "scope": "unmodified full AOT wheel, all default targets, no test namespace"
+}
