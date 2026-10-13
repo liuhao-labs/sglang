@@ -1,0 +1,7 @@
+2026-10-13T18:32:13+08:00
+96 %, 0 %
+               total        used        free      shared  buff/cache   available
+Mem:           121Gi        93Gi       6.3Gi       176Mi        22Gi        27Gi
+Swap:           15Gi       2.2Gi        13Gi
+existing_vllm_health_http=200
+Extra published MoE launches deferred: repeated utilization 95-96% exceeded <=10% gate.

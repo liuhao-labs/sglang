@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/probe/runtime-049/core_import.py", line 4, in <module>
+    import torch
+  File "/probe/runtime-049/probe-site/torch/__init__.py", line 496, in <module>
+    from torch._C import *  # noqa: F403
+    ^^^^^^^^^^^^^^^^^^^^^^
+ImportError: /probe/runtime-049/probe-site/torch/lib/libtorch_cuda.so: undefined symbol: ncclCommResume

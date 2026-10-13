@@ -1,0 +1,25 @@
+/probe/runtime-049/probe-site/torch/cuda/__init__.py:68: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Traceback (most recent call last):
+  File "/probe/runtime-049/import_probe.py", line 9, in <module>
+    import sgl_kernel
+  File "/probe/runtime-049/probe-site/sgl_kernel/__init__.py", line 31, in <module>
+    from sgl_kernel.elementwise import (
+  File "/probe/runtime-049/probe-site/sgl_kernel/elementwise.py", line 7, in <module>
+    import flashinfer.norm as _flashinfer_norm
+  File "/probe/runtime-049/fi-site/flashinfer/__init__.py", line 192, in <module>
+    from .gdn_prefill import chunk_gated_delta_rule as chunk_gated_delta_rule
+  File "/probe/runtime-049/fi-site/flashinfer/gdn_prefill.py", line 35, in <module>
+    from .gdn_kernels import (
+  File "/probe/runtime-049/fi-site/flashinfer/gdn_kernels/__init__.py", line 92, in <module>
+    from .blackwell import (
+  File "/probe/runtime-049/fi-site/flashinfer/gdn_kernels/blackwell/__init__.py", line 14, in <module>
+    from .gdn_cp_prefill import cp_delta_rule_dsl_sm100
+  File "/probe/runtime-049/fi-site/flashinfer/gdn_kernels/blackwell/gdn_cp_prefill.py", line 35, in <module>
+    from .gated_delta_net_cp_prefill import CPDeltaRulePrefillTcgen05Sm100
+  File "/probe/runtime-049/fi-site/flashinfer/gdn_kernels/blackwell/gated_delta_net_cp_prefill.py", line 136, in <module>
+    class CPDeltaRulePrefillTcgen05Sm100(KeyedCompileMixin):
+  File "/probe/runtime-049/fi-site/flashinfer/gdn_kernels/blackwell/gated_delta_net_cp_prefill.py", line 914, in CPDeltaRulePrefillTcgen05Sm100
+    num_sab_heads_fdd: cute.FastDivmodDivisorV2,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'cutlass.cute' has no attribute 'FastDivmodDivisorV2'. Did you mean: 'FastDivmodDivisor'?

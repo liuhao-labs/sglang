@@ -1,0 +1,20 @@
+ 0x000000000000000f (RPATH)              Library rpath: [$ORIGIN/../../nvidia/cudnn/lib:$ORIGIN/../../nvidia/nvshmem/lib:$ORIGIN/../../nvidia/nccl/lib:$ORIGIN/../../nvidia/cusparselt/lib:$ORIGIN/../../nvidia/cu13/lib:$ORIGIN]
+00000000000ed1c0 W ncclCommResume
+00000000000bb958 W ncclGetVersion
+00000000000ed1c0 T pncclCommResume
+00000000000bb958 T pncclGetVersion
+	libc10_cuda.so => /probe/runtime-049/probe-site/torch/lib/libc10_cuda.so (0x0000f5e6bc5d0000)
+	libcudart.so.13 => /usr/local/cuda/targets/sbsa-linux/lib/libcudart.so.13 (0x0000f5e6bc510000)
+	libcusparse.so.12 => /usr/local/cuda/targets/sbsa-linux/lib/libcusparse.so.12 (0x0000f5e6b1e10000)
+	libcufft.so.12 => /usr/local/cuda/targets/sbsa-linux/lib/libcufft.so.12 (0x0000f5e6a0c50000)
+	libcufile.so.0 => /usr/local/cuda/targets/sbsa-linux/lib/libcufile.so.0 (0x0000f5e6a0950000)
+	libcusparseLt.so.0 => not found
+	libnccl.so.2 => /probe/runtime-049/native-site/nvidia/nccl/lib/libnccl.so.2 (0x0000f5e694730000)
+	libcurand.so.10 => /usr/local/cuda/targets/sbsa-linux/lib/libcurand.so.10 (0x0000f5e68b3d0000)
+	libcublas.so.13 => /usr/local/cuda/targets/sbsa-linux/lib/libcublas.so.13 (0x0000f5e687840000)
+	libcublasLt.so.13 => /usr/local/cuda/targets/sbsa-linux/lib/libcublasLt.so.13 (0x0000f5e65cf20000)
+	libcudnn.so.9 => /lib/aarch64-linux-gnu/libcudnn.so.9 (0x0000f5e65cef0000)
+	libnvrtc.so.13 => /usr/local/cuda/targets/sbsa-linux/lib/libnvrtc.so.13 (0x0000f5e656cb0000)
+	libnvshmem_host.so.3 => not found
+	libnvJitLink.so.13 => /usr/local/cuda/targets/sbsa-linux/lib/libnvJitLink.so.13 (0x0000f5e645960000)
+	libcupti.so.13 => /usr/local/cuda/targets/sbsa-linux/lib/libcupti.so.13 (0x0000f5e644e60000)

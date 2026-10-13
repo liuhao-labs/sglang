@@ -1,0 +1,45 @@
+{
+  "text": " One reason to work outdoors is to gain a better understanding of the environment and its",
+  "output_ids": [
+    3776,
+    2874,
+    311,
+    975,
+    33532,
+    374,
+    311,
+    8722,
+    264,
+    2664,
+    8660,
+    315,
+    279,
+    4573,
+    323,
+    1181
+  ],
+  "meta_info": {
+    "id": "156c7c21755a4a79ba42ad1ffd09d60f",
+    "finish_reason": {
+      "type": "length",
+      "length": 16
+    },
+    "prompt_tokens": 8,
+    "weight_version": "default",
+    "num_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 16,
+    "cached_tokens": 0,
+    "weight_versions": [
+      {
+        "version": "default",
+        "start": 0,
+        "end": 16
+      }
+    ],
+    "cached_tokens_details": null,
+    "dp_rank": null,
+    "e2e_latency": 3.8051412398926914,
+    "response_sent_to_client_ts": 1791886538.2616355
+  }
+}

@@ -1,0 +1,23 @@
+/probe/runtime-049/probe-site/torch/cuda/__init__.py:68: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Traceback (most recent call last):
+  File "/probe/runtime-049/import_probe.py", line 9, in <module>
+    import sgl_kernel
+  File "/probe/runtime-049/probe-site/sgl_kernel/__init__.py", line 31, in <module>
+    from sgl_kernel.elementwise import (
+  File "/probe/runtime-049/probe-site/sgl_kernel/elementwise.py", line 7, in <module>
+    import flashinfer.norm as _flashinfer_norm
+  File "/probe/runtime-049/fi-site/flashinfer/__init__.py", line 25, in <module>
+    from . import jit as jit
+  File "/probe/runtime-049/fi-site/flashinfer/jit/__init__.py", line 22, in <module>
+    from . import cubin_loader
+  File "/probe/runtime-049/fi-site/flashinfer/jit/cubin_loader.py", line 30, in <module>
+    from .core import logger
+  File "/probe/runtime-049/fi-site/flashinfer/jit/core.py", line 26, in <module>
+    from . import env as jit_env
+  File "/probe/runtime-049/fi-site/flashinfer/jit/env.py", line 118, in <module>
+    FLASHINFER_CUBIN_DIR: pathlib.Path = _get_cubin_dir()
+                                         ^^^^^^^^^^^^^^^^
+  File "/probe/runtime-049/fi-site/flashinfer/jit/env.py", line 105, in _get_cubin_dir
+    raise RuntimeError(
+RuntimeError: flashinfer-cubin version (0.6.12) does not match flashinfer version (0.7.1). Please install the same version of both packages. Set FLASHINFER_DISABLE_VERSION_CHECK=1 to bypass this check.

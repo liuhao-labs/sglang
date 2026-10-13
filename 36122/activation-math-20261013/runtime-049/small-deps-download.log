@@ -1,0 +1,6 @@
+{"name": "huggingface-hub", "version": "1.31.0", "file": "huggingface_hub-1.31.0-py3-none-any.whl", "url": "https://files.pythonhosted.org/packages/c3/7f/3f886a625043b77312b80da2f2bf00b5ecbf5a73061af1aa0259cd258c9d/huggingface_hub-1.31.0-py3-none-any.whl", "bytes": 798313, "sha256": "9dbb6a503cbe2494ea666695207e7262d410659e09134059deb83e5480864667"}
+Traceback (most recent call last):
+  File "/probe/runtime-049/download_wheels.py", line 26, in <module>
+    assert len(candidates)==1,(spec,[f['filename'] for f in candidates])
+           ^^^^^^^^^^^^^^^^^^
+AssertionError: ('tokenizers==0.23.2', ['tokenizers-0.23.2-cp310-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl', 'tokenizers-0.23.2-cp310-abi3-musllinux_1_2_aarch64.whl'])

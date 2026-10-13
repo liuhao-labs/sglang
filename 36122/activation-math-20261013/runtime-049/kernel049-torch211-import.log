@@ -1,0 +1,34 @@
+Processing ./probe/wheels/sglang_kernel-0.4.9-cp310-abi3-manylinux2014_aarch64.whl
+Installing collected packages: sglang-kernel
+Successfully installed sglang-kernel-0.4.9
+/usr/local/lib/python3.12/dist-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Torch 2.11.0+cu130 13.0
+Traceback (most recent call last):
+  File "/probe/runtime-049/preflight_211.py", line 9, in <module>
+    import sgl_kernel
+  File "/probe/runtime-049/kernel211-site/sgl_kernel/__init__.py", line 19, in <module>
+    common_ops = _load_architecture_specific_ops()
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/probe/runtime-049/kernel211-site/sgl_kernel/load_utils.py", line 192, in _load_architecture_specific_ops
+    raise ImportError(error_msg)
+ImportError: 
+[sgl_kernel] CRITICAL: Could not load any common_ops library!
+
+Attempted locations:
+1. Architecture-specific pattern: /probe/runtime-049/kernel211-site/sgl_kernel/sm100/common_ops.* - found files: ['/probe/runtime-049/kernel211-site/sgl_kernel/sm100/common_ops.abi3.so']
+2. Fallback pattern: /probe/runtime-049/kernel211-site/sgl_kernel/common_ops.* - found files: []
+3. Standard Python import: common_ops - failed
+
+GPU Info:
+- Compute capability: None
+- Expected variant: CPU/No GPU detected (using precise math)
+- CUDA version: 13.0
+
+Please ensure sgl_kernel is properly installed with:
+pip install --upgrade sglang-kernel
+
+Error details from previous import attempts:
+- ImportError: libcuda.so.1: cannot open shared object file: No such file or directory
+- ModuleNotFoundError: No module named 'common_ops'
+

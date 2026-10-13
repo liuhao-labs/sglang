@@ -1,0 +1,18 @@
+{
+  "role": "integrated",
+  "torch": "2.14.1+cu130",
+  "torch_file": "/probe/runtime-049/probe-site/torch/__init__.py",
+  "cuda": "13.0",
+  "kernel_version": "0.4.9",
+  "common_ops": "/probe/runtime-049/probe-site/sgl_kernel/sm100/common_ops.abi3.so",
+  "common_ops_sha256": "8b5ee02f8eb7c807e8b8051963e4a88f6d7174a72960bc5f2e3d9905c21456bf",
+  "sglang_source": "/src/python/sglang/__init__.py",
+  "gguf_source": "/src/python/sglang/srt/layers/quantization/gguf.py",
+  "transformers_version": "5.19.0",
+  "capability": false,
+  "activation_policy": [
+    "--use_fast_math"
+  ],
+  "bindings": "unmodified published wheel and production SRT (no test namespace)",
+  "status": "IMPORT_PASS"
+}

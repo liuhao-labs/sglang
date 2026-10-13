@@ -10,6 +10,13 @@ wheel or a passing latest-runtime serving test**. The original PR branch was
 left clean and unchanged; no new feature commit, force-push, or maintainer ping
 was made.
 
+**Follow-up:** the cached-image gap was subsequently resolved in isolation.
+The official hash-verified 0.4.9 wheel with matched Torch 2.14.1 and current
+primary dependencies passed real Qwen2.5 startup/generation on U and U+PR.
+Both returned identical text and 16 output token IDs. This is published-wheel
+fallback evidence, not an enabled PR-built-full-wheel result. See
+[the runtime follow-up and raw server logs](runtime-049/README.md).
+
 ## Pinned sources and actual call chain
 
 | item | SHA |

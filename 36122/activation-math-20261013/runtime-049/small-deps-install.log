@@ -1,0 +1,11 @@
+Processing ./probe/wheels/huggingface_hub-1.31.0-py3-none-any.whl
+Processing ./probe/wheels/tokenizers-0.23.2-cp310-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
+Processing ./probe/wheels/safetensors-0.8.0-cp310-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
+Processing ./probe/wheels/xgrammar-0.2.7-cp312-cp312-manylinux_2_26_aarch64.manylinux_2_28_aarch64.whl
+Processing ./probe/wheels/sympy-1.14.0-py3-none-any.whl
+Processing ./probe/wheels/typing_extensions-4.16.0-py3-none-any.whl
+Processing ./probe/wheels/setuptools-84.0.0-py3-none-any.whl
+Installing collected packages: xgrammar, typing-extensions, tokenizers, sympy, setuptools, safetensors, huggingface-hub
+
+Successfully installed huggingface-hub-1.31.0 safetensors-0.8.0 setuptools-84.0.0 sympy-1.14.0 tokenizers-0.23.2 typing-extensions-4.16.0 xgrammar-0.2.7
+WARNING: Target directory /probe/runtime-049/probe-site/bin already exists. Specify --upgrade to force replacement.
